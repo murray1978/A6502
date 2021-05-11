@@ -1,0 +1,9 @@
+
+*.rules
+*.ses
+*.lib
+*.dsn
+*.db
+*.sch-bak
+Hardware/ACI/fp-info-cache
+*.kicad_pcb-bak
