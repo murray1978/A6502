@@ -1,5 +1,13 @@
 # A6502
- 6502 project running wozmon and wozaci
+ 6502 project running wozmon and wozaci, build at your own risk, see Current Issues and Changes below.
+ 
+ ### Specs
+ 6502 processor at 1Mhz
+ 8Kb Ram, IS61C64
+ 8Kb Rom, 28C64
+ One user port via a 6522 at 0xA000
+ Serial port via a 8251 at 
+ 
  
  ### Current Issues
  1. 8251A requires seperate clock.
