@@ -6,11 +6,11 @@
  And introducing more mistakes.
 
  ### Specs
- .6502 processor at 1Mhz
- .8Kb Ram, IS61C64
- .8Kb Rom, 28C64
- .One user port via a 6522 at 0xA000
- .Serial port via a 8251 at 0xC000
+ 6502 processor at 1Mhz
+ 8Kb Ram, IS61C64
+ 8Kb Rom, 28C64
+ One user port via a 6522 at 0xA000
+ Serial port via a 8251 at 0xC000
  
  ### Component Selection
  Mostly 74LS, 74HC support chips, 74HCT may also work.
