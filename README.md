@@ -4,7 +4,8 @@
  There is no monitor rom yet, working to adapt the apple 1 monitor.
  Version 2 of the board is in progress fixing version 1 mistakes 
  And introducing more mistakes.
-
+ Please note current Schmatic and PCB do not match.
+ 
  ### Specs
  6502 processor at 1Mhz
  8Kb Ram, IS61C64
