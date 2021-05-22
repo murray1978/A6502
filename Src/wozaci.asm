@@ -20,20 +20,11 @@ HEX2H           .EQ     $27
 SAVEINDEX       .EQ     $28             Save index in input buffer
 LASTSTATE       .EQ     $29             Last input state
 
-
 IN              .EQ     $0200           Input buffer
-;Original
-;FLIP            .EQ     $C000           Output flip-flop
-;TAPEIN          .EQ     $C081           Tape input
-;KBD             .EQ     $D010           PIA.A keyboard input
-;KBDCR           .EQ     $D011           PIA.A keyboard control register
-
-;6502 Project
-FLIP            .EQ     $8000           ;Output flip-flop
-TAPEIN          .EQ     $8081           ;Tape input
-KBD             .EQ     $C000           ;PIA.A keyboard input, 8521
-KBDCR           .EQ     $C001           ;PIA.A keyboard control register, 8521
-
+FLIP            .EQ     $C000           Output flip-flop
+TAPEIN          .EQ     $C081           Tape input
+KBD             .EQ     $D010           PIA.A keyboard input
+KBDCR           .EQ     $D011           PIA.A keyboard control register
 ESCAPE          .EQ     $FF1A           Escape back to monitor
 ECHO            .EQ     $FFEF           Echo character to terminal
 
