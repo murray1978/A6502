@@ -12,17 +12,21 @@
  One user port via a 6522 at 0xA000
  Serial port via a 8251 at 0xC000
  
+
+ ### Hardware
+ Current board is 6502-Controller.kicad_pcb. 
+
  ### Component Selection
  Mostly 74LS, 74HC support chips, 74HCT may also work.
- 
- ### Current Issues
+
+ ### Current Issues (6502.1.1.kicad_pcb)
  1.  8251A may require a seperate clock if cpu is at 1mhz and programmed at x64 rate.
  2.  No power light 
  3.  Reset could damage older chips, do not use as is. Replace 100u reset cap with 100n cap.
  4.  8251a reset is active high, not low as shown on board.
  5.  74hc4060 incorrect pinout, leading to misleading baud rate signals.
 
- ### Changes
+ ### Changes (6502.1.1.kicad_pcb)
  - [x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
  - [x]  Add LED Power indicator 
  - [x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
