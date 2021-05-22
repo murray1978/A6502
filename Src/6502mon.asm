@@ -23,21 +23,23 @@ L               EQU     $28             ;Hex value parsing Low
 H               EQU     $29             ;Hex value parsing High
 YSAV            EQU     $2A             ;Used to see if hex value is given
 MODE            EQU     $2B             ;$00=XAM, $7F=STOR, $AE=BLOCK XAM
+XAM             EQU     $00             ;
+STOR            EQU     $7F             ;
+BLOCK_XAM       EQU     $AE             ;Or 5C
 
 IN              EQU     $0200,$027F     ;Input buffer
 
-;TEMP_ECHO_CHAR  EQU     $0280           ;Temp char for echo
 ; Original
 ;KBD             .EQ     $D010           ;PIA.A keyboard input
 ;KBDCR           .EQ     $D011           ;PIA.A keyboard control register
 ;DSP             .EQ     $D012           ;PIA.B display output register
 ;DSPCR           .EQ     $D013           ;PIA.B display control register
 
-; We are not using a 6520 or a Terminal but serial at 0xC000 
+; We are not using a 6520 or a Terminal but serial at 0xC000 or 0x8000 
 SERIAL_DATA     EQU     $C000           ;8251 Data Address
 SERIAL_CMD      EQU     $C001           ;8251 Cmd Address
 RST_CMD         EQU     $40             ;Reset Command sent 4 times
-MODE_CMD        EQU     %01001101       ;Async mode, 8,n,1, 1x rate
+MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 64x rate
 DATA_CMD        EQU     %00110111       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
 RX_READY        EQU     $02             ;8251 ready to recive
 
@@ -52,12 +54,12 @@ RX_READY        EQU     $02             ;8251 ready to recive
 ;-------------------------------------------------------------------------
 ;  Constants
 ;-------------------------------------------------------------------------
-
-BS              EQU     $08;DF             ;Backspace key, arrow left key
-CR              EQU     $0D;8D             ;Carriage Return
-LF              EQU     $0A                ;
-ESC             EQU     $1B;9B             ;ESC key
-PROMPT          EQU     $5C                ;Prompt character, \
+							;Original Value
+BS              EQU     $5F;DF              ;Backspace key, arrow left key
+CR              EQU     $0D;8D              ;Carriage Return
+LF              EQU     $0A;8A              ;Line feed
+ESC             EQU     $1B;9B              ;ESC key
+PROMPT          EQU     $5C                 ;Prompt character, /
 
 ;-------------------------------------------------------------------------
 ;  Let's get started
@@ -82,7 +84,7 @@ RESET           CLD                     ;Clear decimal arithmetic mode
                 STA     SERIAL_CMD 
                 
                 LDA     #$1B             ;For the fall through
-                LDY     #$7B             
+                LDY     #$7F             
 ; Program falls through to the GETLINE routine to save some program bytes
 ; Please note that Y still holds $7F, which will cause an automatic Escape
 
@@ -147,10 +149,10 @@ NEXTITEM        LDA     IN,Y            ;Get character
 ; Here we're trying to parse a new hex value
 
 NEXTHEX         LDA     IN,Y            ;Get character for hex test
-                EOR     #$60            ;B0            ;Map digits to 0-9, 60
+                EOR     #$60;B0         ;Map digits to 0-9, (EOR #$30 not sure what correct here!)
                 CMP     #9+1            ;Is it a decimal digit?
                 BCC     DIG             ;Yes!
-                ADC     #$b9            ;88            ;Map letter "A"-"F" to $FA-FF, b9
+                ADC     #$88            ;Map letter "A"-"F" to $FA-FF, 
                 CMP     #$FA            ;Hex letter?
                 BCC     NOTHEX          ;No! Character not hex
 
