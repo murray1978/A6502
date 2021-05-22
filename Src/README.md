@@ -1,5 +1,8 @@
 # The Source (inital comments)
-Four source files, wozmon.asm, wozaci.asm, 6502mon.asm and 6502aci.asm
+  Four source files, wozmon.asm, wozaci.asm, 6502mon.asm and 6502aci.asm (yet to be produced).
+
+### The Bin file
+  Currently I have 6502mon.bin, it works but there is an issue with hex values.
 
 ### Wozmon and 6502mon differences.
   Added initalisation code for 8251a.
@@ -8,8 +11,12 @@ Four source files, wozmon.asm, wozaci.asm, 6502mon.asm and 6502aci.asm
   
 ### Wozmon.asm
   In the Apple 1, loaded at 0xFF00
+  
 ### Wozaci.asm
-  In the apple 1, loaded at 0xC000
+  In the apple 1, loaded at 0xC000, expects ECHO at 0xFFEF
+  
 ### 6502mon.asm
-
+  Loaded at 0xFE00, makes up for a bit more space with the 8251a initalisation and echo code, there is a JSR to echo at 0xFFEF for the wozaci code.
+  
 ### 6502aci.asm
+  Loaded at 0xC000, Not much to change, address is the same as the original, changes to return to monitor address, 8251a address.
