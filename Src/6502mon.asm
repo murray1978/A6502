@@ -149,10 +149,12 @@ NEXTITEM        LDA     IN,Y            ;Get character
 ; Here we're trying to parse a new hex value
 
 NEXTHEX         LDA     IN,Y            ;Get character for hex test
-                EOR     #$60;B0         ;Map digits to 0-9, (EOR #$30 not sure what correct here!)
+                EOR     #'0';$B0        ;Map digits to 0-9, (EOR #$30 not sure what correct here!)
+										;But..... #'0' was found in wozaci so another way of doing 
+										;same thing!
                 CMP     #9+1            ;Is it a decimal digit?
                 BCC     DIG             ;Yes!
-                ADC     #$88            ;Map letter "A"-"F" to $FA-FF, 
+                ADC     #$88        	;Map letter "A"-"F" to $FA-FF, carry set above!
                 CMP     #$FA            ;Hex letter?
                 BCC     NOTHEX          ;No! Character not hex
 
