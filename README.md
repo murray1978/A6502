@@ -23,12 +23,12 @@
  5.  74hc4060 incorrect pinout, leading to misleading baud rate signals.
 
  ### Changes
- 1.  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. -[x]
- 2.  Add LED Power indicator -[x]
- 3.  Add/Fix missing silk screen text for, user and expasion ports, U4 etc -[x]
- 4.  Change pinout for RN1, add a pin. -[x]
+ 1.  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. - [x]
+ 2.  Add LED Power indicator - [x]
+ 3.  Add/Fix missing silk screen text for, user and expasion ports, U4 etc - [x]
+ 4.  Change pinout for RN1, add a pin. - [x]
  5.  ~~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.
- 6.  Move bypass caps for ease of extraction tool access. -[x]
+ 6.  Move bypass caps for ease of extraction tool access. - [x]
  7.  ~~Change values of Baudrate text, reflect 64x clock speed (see issue 5)
- 8.  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. -[x]
- 9.  74hc4060 pin out has to be updated, -[x]
+ 8.  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. - [x]
+ 9.  74hc4060 pin out has to be updated, - [x]
