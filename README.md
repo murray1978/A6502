@@ -24,7 +24,7 @@
 
  ### Changes
  - [x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
- - [x] Add LED Power indicator 
+ - [x]  Add LED Power indicator 
  - [x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
  - [x]  Change pinout for RN1, add a pin. 
  - [x]  ~~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.
