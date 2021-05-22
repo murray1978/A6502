@@ -16,8 +16,8 @@
  Mostly 74LS, 74HC support chips, 74HCT may also work.
  
  ### Current Issues
- 1. ~~8251A may require a seperate clock if cpu is at 1mhz and programmed at x64 rate.
- 2. ~~No power light
+ ~~1. 8251A may require a seperate clock if cpu is at 1mhz and programmed at x64 rate.
+ ~~2. No power light
  3. ~~Reset could damage older chips, do not use as is. Replace 100u reset cap with 100n cap.
  4. ~~8251a reset is active high, not low as shown on board.
  5. ~~74hc4060 incorrect pinout, leading to misleading baud rate signals.
