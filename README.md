@@ -27,8 +27,8 @@
  - [x]  Add LED Power indicator 
  - [x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
  - [x]  Change pinout for RN1, add a pin. 
- - [x]  ~~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.
+ - [x]  ~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.~
  - [x]  Move bypass caps for ease of extraction tool access. 
- - [x]  ~~Change values of Baudrate text, reflect 64x clock speed (see issue 5)
+ - [x]  ~Change values of Baudrate text, reflect 64x clock speed (see issue 5)~
  - [x]  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. 
  - [x]  74hc4060 pin out has to be updated, 
