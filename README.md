@@ -1,10 +1,13 @@
 # A6502
- 6502 project running wozmon and wozaci, build at your own risk, see Current Issues and Changes below.
+ 6502 project running wozmon and wozaci, version 2 board will be out soon, see Current Issues and Changes below.
  As it stands ram, rom, 8251 interfaces work, yet to try the 6522.
  There is no monitor rom yet, working to adapt the apple 1 monitor.
  Version 2 of the board is in progress fixing version 1 mistakes And introducing more mistakes.
  
- 
+ ## version 2 update.
+ 14/6/21 version 2 of the board will be out soon including
+ a copy of the apple1 aci. 
+ Version 2 will also include an updated wozmon and wozaci firmware.
  ### Specs
  6502 processor at 1Mhz
  8Kb Ram, IS61C64
