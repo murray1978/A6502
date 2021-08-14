@@ -1,13 +1,15 @@
 # A6502
- 6502 project running wozmon and wozaci, version 2 board will be out soon, see Current Issues and Changes below.
- As it stands ram, rom, 8251 interfaces work, yet to try the 6522.
- There is no monitor rom yet, working to adapt the apple 1 monitor.
- Version 2 of the board is in progress fixing version 1 mistakes And introducing more mistakes.
- 
+ 6502 project running a modified wozmon and wozaci.
+ As it stands ram, rom, 8251 interfaces work, yet to try the 6522 interface, the aci or loading basic from the aci.
+  
  ## version 2 update.
- 14/6/21 version 2 of the board will be out soon including
- a copy of the apple1 aci. 
- Version 2 will also include an updated wozmon and wozaci firmware.
+ 14/8/21 version 2 is included as /hardware/6502/6502-Controller.pro /hardware/6502/6502-Controller.sch and /hardware/6502/6502-Controller.kicad_pcb.
+ I have fixed an issue with R2 not having a 5V supply, R2 is part of the reset circuit.
+ The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
+ You may have to play around with the 8251a setup for it to work.
+ 
+ Any improvements and suggestions are welcome
+ 
  ### Specs
  6502 processor at 1Mhz
  8Kb Ram, IS61C64
@@ -16,7 +18,7 @@
  Serial port via a 8251 at 0x8000
  
  ### Source
- Current source is for the v1.0 board, for the v1.1 board change address of 8251a from 0xC000 to 0x8000.
+ Current source is for the v2.0 board, 
  
  ### Assembling the source
  Currently I am using asm80.com to assemble the code (downloads as a 64k file ) then a hex editor to trim the last 0x2000 bytes (8k)
@@ -36,12 +38,12 @@
  5.  74hc4060 incorrect pinout, leading to misleading baud rate signals.
 
  ### Changes from 6502.1.1.kicad_pcb to 6502-Controller.kicad_pcb
- - [x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
- - [x]  Add LED Power indicator 
- - [x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
- - [x]  Change pinout for RN1, add a pin. 
+ - ~[x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
+ - ~[x]  Add LED Power indicator 
+ - ~[x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
+ - ~[x]  Change pinout for RN1, add a pin. 
  -  ~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.~
  - [x]  Move bypass caps for ease of extraction tool access. 
  - ~Change values of Baudrate text, reflect 64x clock speed (see issue 5)~
- - [x]  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. 
- - [x]  74hc4060 pin out has to be updated, 
+ - ~[x]  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. 
+ - ~[x]  74hc4060 pin out has to be updated, 
