@@ -15,7 +15,7 @@
  8Kb Ram, IS61C64
  8Kb Rom, 28C64
  One user port via a 6522 at 0xA000
- Serial port via a 8251 at 0x8000
+ Serial port via a 8251 at 0x8000, baud rates 1200, 600, 300 and 150
  
  ### Source
  Current source is for the v2.0 board, 
@@ -25,7 +25,7 @@
  And finaly "burning" the eeprom with the 8k image.
 
  ### Hardware
- Current board is 6502-Controller.kicad_pcb. 
+ Current board is 6502-Controller.kicad_pcb now version 2
 
  ### Component Selection
  Mostly 74LS, 74HC support chips, 74HCT may also work.
@@ -38,12 +38,12 @@
  5.  74hc4060 incorrect pinout, leading to misleading baud rate signals.
 
  ### Changes from 6502.1.1.kicad_pcb to 6502-Controller.kicad_pcb
- - ~[x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
- - ~[x]  Add LED Power indicator 
- - ~[x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
- - ~[x]  Change pinout for RN1, add a pin. 
+ - [x]  Add Clock for 8251A, cannot use procssor clock as the 8251A requires a clock atleast 30 times the baud rate. 
+ - [x]  Add LED Power indicator 
+ - [x]  Add/Fix missing silk screen text for, user and expasion ports, U4 etc 
+ - [x]  Change pinout for RN1, add a pin. 
  -  ~Redesign baud rate generator? make it smaller? Use x1 or x16 for baud rate selection.~
  - [x]  Move bypass caps for ease of extraction tool access. 
  - ~Change values of Baudrate text, reflect 64x clock speed (see issue 5)~
- - ~[x]  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. 
- - ~[x]  74hc4060 pin out has to be updated, 
+ - [x]  Reset, change the basic r/c reset to a 555 or inverter based reset, or 100n cap instead of 100u. 
+ - [x]  74hc4060 pin out has to be updated, 
