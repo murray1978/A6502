@@ -1507,7 +1507,7 @@ GND
 Wire Wire Line
 	14650 11750 15000 11750
 Text Notes 5950 5750 0    50   Italic 10
-Address map\n0x0000 Ram\n0x2000 Spare\n0x4000 Spare\n0x6000 Spare\n0x8000 8251\n0xA000 6522\n0xC000 ACI Casstte \n0xE000 ROM
+Address map\n0x0000 Ram\n0x2000 FDC rom, 0x3000 device\n0x4000 Graphics 2K or smaller ram\n0x6000 Spare\n0x8000 8251 Serial port\n0xA000 6522 User Port\n0xC000 ACI Casstte \n0xE000 ROM
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J8
 U 1 1 6140EEF2
@@ -2244,4 +2244,18 @@ Wire Bus Line
 	8800 5650 8800 7200
 Wire Bus Line
 	11550 7450 11550 9150
+Text Notes 7900 9750 0    50   ~ 0
+ACI
+Text Notes 7900 9350 0    50   ~ 0
+Graphics
+Text Notes 7900 9650 0    50   ~ 0
+UserPort
+Text Notes 7900 9550 0    50   ~ 0
+Serial Port
+Text Notes 7900 9150 0    50   ~ 0
+4K RAM
+Text Notes 7900 9850 0    50   ~ 0
+4K Rom
+Text Notes 7900 9250 0    50   ~ 0
+FDC
 $EndSCHEMATC
