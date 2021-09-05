@@ -9,7 +9,10 @@
  You may have to play around with the 8251a setup for it to work.
  
  Any improvements and suggestions are welcome
- 
+
+ ## Errors
+  For the serial to work, select the 150 jumper for 2400 baud. 
+
  ### Specs
  6502 processor at 1Mhz
  8Kb Ram, IS61C64
