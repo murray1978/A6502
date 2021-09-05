@@ -423,25 +423,10 @@ Text GLabel 3850 900  0    50   Input ~ 0
 GND
 Text GLabel 4350 900  2    50   Input ~ 0
 GND
-Text GLabel 3500 1900 0    50   Input ~ 0
-GND
-Wire Wire Line
-	3500 1900 3550 1900
-Wire Wire Line
-	3550 1900 3550 2100
-Wire Wire Line
-	3550 2100 3850 2100
-Connection ~ 3550 1900
-Wire Wire Line
-	3550 1900 3850 1900
 Text GLabel 3850 2000 0    50   Input ~ 0
 ~RES
 Text GLabel 3850 2200 0    50   Input ~ 0
 CLK
-Text GLabel 3500 2700 0    50   Input ~ 0
-GND
-Wire Wire Line
-	3500 2700 3850 2700
 Text GLabel 3850 1800 0    50   Input ~ 0
 R~W
 NoConn ~ 4350 1000
@@ -601,7 +586,6 @@ Text Notes 2700 550  0    50   ~ 0
 To Video Card\n
 NoConn ~ 3850 2300
 NoConn ~ 3850 2400
-NoConn ~ 3850 2500
 NoConn ~ 3850 2600
 NoConn ~ 4350 1100
 Wire Notes Line
@@ -1768,6 +1752,10 @@ Wire Bus Line
 	9200 3950 9750 3950
 Text Label 9200 3950 0    50   ~ 0
 AddressBusOut
+Text GLabel 3750 2500 0    50   Input ~ 0
+CS1-graphics
+Wire Wire Line
+	3850 2500 3750 2500
 Wire Bus Line
 	650  4350 650  5250
 Wire Bus Line
@@ -1777,21 +1765,21 @@ Wire Bus Line
 Wire Bus Line
 	3350 6900 3350 7800
 Wire Bus Line
-	800  3600 800  4350
-Wire Bus Line
-	800  800  800  1550
-Wire Bus Line
-	3400 850  3400 1600
-Wire Bus Line
-	9000 1150 9000 1900
-Wire Bus Line
-	7100 1150 7100 1900
-Wire Bus Line
-	3400 3600 3400 4350
+	3500 6150 3500 6900
 Wire Bus Line
 	900  6150 900  6900
 Wire Bus Line
-	3500 6150 3500 6900
+	3400 3600 3400 4350
+Wire Bus Line
+	7100 1150 7100 1900
+Wire Bus Line
+	9000 1150 9000 1900
+Wire Bus Line
+	3400 850  3400 1600
+Wire Bus Line
+	800  800  800  1550
+Wire Bus Line
+	800  3600 800  4350
 Wire Bus Line
 	2000 4050 2000 5550
 Wire Bus Line
@@ -1808,4 +1796,10 @@ Wire Bus Line
 	7700 3950 7700 6600
 Wire Bus Line
 	9200 3950 9200 6600
+Text GLabel 3850 2700 0    50   Input ~ 0
+GND
+Text GLabel 3850 2100 0    50   Input ~ 0
+GND
+Text GLabel 3850 1900 0    50   Input ~ 0
+GND
 $EndSCHEMATC

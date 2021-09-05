@@ -2018,7 +2018,7 @@ CLK1
 Wire Wire Line
 	14750 6500 15050 6500
 Text Notes 16900 8350 0    50   ~ 0
-19.6608 Mhz for x64\n2.4576 Mhz for x16, recomended\n
+19.6608 Mhz for x64\n2.4576 Mhz for x1, recomended\n
 $Comp
 L 74xx:74HC14 U10
 U 7 1 60A9C380
@@ -2212,6 +2212,20 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14450 6500 50  0001 C CNN
 $EndComp
 NoConn ~ 15750 7600
 NoConn ~ 9800 6000
+Text Notes 7900 9750 0    50   ~ 0
+ACI
+Text Notes 7900 9350 0    50   ~ 0
+Graphics
+Text Notes 7900 9650 0    50   ~ 0
+UserPort
+Text Notes 7900 9550 0    50   ~ 0
+Serial Port
+Text Notes 7900 9150 0    50   ~ 0
+4K RAM
+Text Notes 7900 9850 0    50   ~ 0
+4K Rom
+Text Notes 7900 9250 0    50   ~ 0
+FDC
 Wire Wire Line
 	15500 10150 16550 10150
 Wire Bus Line
@@ -2244,18 +2258,6 @@ Wire Bus Line
 	8800 5650 8800 7200
 Wire Bus Line
 	11550 7450 11550 9150
-Text Notes 7900 9750 0    50   ~ 0
-ACI
-Text Notes 7900 9350 0    50   ~ 0
-Graphics
-Text Notes 7900 9650 0    50   ~ 0
-UserPort
-Text Notes 7900 9550 0    50   ~ 0
-Serial Port
-Text Notes 7900 9150 0    50   ~ 0
-4K RAM
-Text Notes 7900 9850 0    50   ~ 0
-4K Rom
-Text Notes 7900 9250 0    50   ~ 0
-FDC
+Text Notes 15900 7650 0    50   ~ 0
+Clock Gen Wrong. Again
 $EndSCHEMATC
