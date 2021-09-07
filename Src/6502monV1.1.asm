@@ -40,7 +40,7 @@ IN              EQU     $0200           ;,$027F     ;Input buffer
 SERIAL_DATA     EQU     $8000           ;8251 Data Address
 SERIAL_CMD      EQU     $8001           ;8251 Cmd Address
 RST_CMD         EQU     $40             ;Reset Command sent 4 times
-MODE_CMD        EQU     %01001101       ;Async mode, 8,n,1, 1x rate
+MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 1x rate
 DATA_CMD        EQU     %00110111       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
 RX_READY        EQU     $02             ;8251 ready to recive
 

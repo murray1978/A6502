@@ -2258,4 +2258,6 @@ Wire Bus Line
 	14350 4950 14700 4950
 Text Label 14700 5800 2    50   ~ 0
 AddressBus
+Text Notes 15800 7600 0    50   ~ 0
+76.7Khz, 19.6608Mhz
 $EndSCHEMATC
