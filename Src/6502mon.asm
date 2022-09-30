@@ -42,7 +42,7 @@ RST_CMD         EQU     $40             ;Reset Command sent 4 times
 MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 64x rate
 ;MODE_CMD        EQU     %01001101       ;Async mode, 8,n,1, 1x rate
 
-DATA_CMD        EQU     %00110111       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
+DATA_CMD        EQU     %00010101       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
 RX_READY        EQU     $02             ;8251 ready to recive
 
 ; This may not suit our setup
@@ -74,11 +74,14 @@ PROMPT          EQU     $5C                 ;Prompt character, /
 
 RESET           CLD                     ;Clear decimal arithmetic mode
                 SEI                     ;Disable interupts
-                LDA     #$00             ;Start with a reset
+		LDX	$FF		;Top of Page $0100
+		TXS			;Load x into stack pointer
+                LDA     #$00            ;Start with a reset
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
-                LDA     #RST_CMD         ;Should be able to reset device here
+		STA	SERIAL_CMD	; 4th reset to get things back to normal, 4 resets are very important for the 8251
+                LDA     #RST_CMD        ;Should be able to reset device here
                 STA     SERIAL_CMD
                 LDA     #MODE_CMD    
                 STA     SERIAL_CMD      
