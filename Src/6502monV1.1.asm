@@ -6,6 +6,13 @@
 ;-------------------------------------------------------------------------
 ;  Modified in 2021 for personal 6502 project, board 2
 ;
+                ORG     $E000
+                
+MSG             EQU     'H'
+                
+TESTPRINT       LDA     #MSG
+                JSR     ECHO
+                JMP     TESTPRINT
 
                 ;.CR     6502
                 ORG      $FE00
@@ -36,12 +43,12 @@ IN              EQU     $0200           ;,$027F     ;Input buffer
 ;DSP             .EQ     $D012           ;PIA.B display output register
 ;DSPCR           .EQ     $D013           ;PIA.B display control register
 
-; We are not using a 6520 or a Terminal but serial at 0x8000 
+; We are not using a 6520 or a Terminal but serial at 0xC000 
 SERIAL_DATA     EQU     $8000           ;8251 Data Address
 SERIAL_CMD      EQU     $8001           ;8251 Cmd Address
 RST_CMD         EQU     $40             ;Reset Command sent 4 times
-MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 1x rate
-DATA_CMD        EQU     %00110111       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
+MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 64x rate
+DATA_CMD        EQU     %00010101        ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
 RX_READY        EQU     $02             ;8251 ready to recive
 
 ; This may not suit our setup
@@ -70,11 +77,13 @@ PROMPT          EQU     $5C                 ;Prompt character, /
 ;  are selected.
 ;-------------------------------------------------------------------------
 ; Reset will be setting up the 8251, 
-; We could also setup the Stack to another location but leave it at the zero page for now.
 
 RESET           CLD                     ;Clear decimal arithmetic mode
                 SEI                     ;Disable interupts
-                LDA     #$00             ;Start with a reset
+                LDX     $FF             ;Stack Address in page 1
+                TXS                     ;And set stack address
+                LDA     #$00            ;Start with a reset
+                STA     SERIAL_CMD
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
@@ -85,8 +94,10 @@ RESET           CLD                     ;Clear decimal arithmetic mode
                 LDA     #DATA_CMD
                 STA     SERIAL_CMD 
                 
-                LDA     #$1B             ;For the fall through
-                LDY     #$7F             
+                ;JMP TESTPRINT          ;For a test
+                
+                LDA     #$00             ;For the fall through
+                LDY     #$00             ;Register Y has start of line
 ; Program falls through to the GETLINE routine to save some program bytes
 ; Please note that Y still holds $7F, which will cause an automatic Escape
 
@@ -117,7 +128,7 @@ NEXTCHAR        LDA     SERIAL_CMD      ;Wait for key press
                 AND     #RX_READY
                 BEQ     NEXTCHAR        ;No key yet!
                 LDA     SERIAL_DATA     ;Load character. (B7 should be '1')
-                STA     IN,Y            ;Add to text buffer
+                STA     IN,Y            ;Add to text buffer, y = offset from IN
                 JSR     ECHO            ;Display character
                 CMP     #CR
                 BNE     NOTCR           ;It's not CR!
@@ -134,7 +145,7 @@ SETMODE         STA     MODE            ;Set mode flags
 
 BLSKIP          INY                     ;Advance text index
 
-NEXTITEM        LDA     IN,Y            ;Get character
+NEXTITEM        LDA     IN,Y            ;Get character, y = offset from IN
                 CMP     #CR
                 BEQ     GETLINE         ;We're done if it's CR!
                 CMP     #'.'

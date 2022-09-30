@@ -1986,8 +1986,6 @@ Text GLabel 8150 6950 2    50   Input ~ 0
 GND
 Text GLabel 7550 6950 0    50   Input ~ 0
 5V
-NoConn ~ 15800 6250
-NoConn ~ 15800 6350
 $Comp
 L Connector_Generic:Conn_01x02 J71
 U 1 1 610E3088
@@ -2219,6 +2217,12 @@ Wire Wire Line
 Connection ~ 7700 12400
 Wire Wire Line
 	7700 12400 7700 12700
+Wire Wire Line
+	15800 6350 15900 6350
+Wire Wire Line
+	15900 6350 15900 6250
+Wire Wire Line
+	15900 6250 15800 6250
 Wire Wire Line
 	15500 10150 16550 10150
 Wire Bus Line
