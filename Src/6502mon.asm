@@ -4,8 +4,55 @@
 ;  Written by Steve Wozniak 1976
 ;
 ;-------------------------------------------------------------------------
-;  Modified in 2021 for personal 6502 project
+;  Modified in 2021 for personal 6502 project, board 2
+; 
+; Memory Map
+; Zero page 0x0000 -> 0x00FF
+; Stack     0x0100 -> 0x01FF
+; key buff  0x0200 -> 0x0300?
 ;
+                ORG     $E000
+
+;FDC routines
+FDC_BASE 		EQU		$6000		;8K Ram 0x6000 to 0x8000
+;Init FDC @ 0x6000
+FDC_INIT		RTS
+FDC_READ		RTS
+FDC_WRITE		RTS
+FDC_STATUS		RTS
+
+;VDU
+VDU_BASE		EQU		$4000		;4K VDU Ram 0x4000
+
+;6522 VIA Testing, call with E100R
+VIA_BASE		EQU 	$A000		;6522 VIA base
+VIA_REGB		EQU		VIA_BASE
+VIA_REGA		EQU		VIA_BASE + 1
+VIA_DDRB		EQU		VIA_BASE + 2
+VIA_DDRA		EQU		VIA_BASE + 3
+				ORG 	$E100
+;Setup VIA
+				LDA #FF
+				STA	VIA_DDRA
+LEDLOOP			LDA #FF					;turn LED on
+				STA VIA_REGB
+				JSR DELAY
+				LDA #00					;Turn LED off
+				STA VIA_REGB
+				JSR DELAY
+				JMP LEDLOOP
+        
+DELAY 		  	LDX $FF
+				DEX
+				CPX
+				BNE  DELAY
+DELAY2  		LDX $FF
+				DEX
+				CPX
+				BNE  DELAY2
+				RTS
+
+
 
                 ;.CR     6502
                 ORG      $FE00
@@ -27,22 +74,21 @@ XAM             EQU     $00             ;
 STOR            EQU     $7F             ;
 BLOCK_XAM       EQU     $AE             ;Or 5C
 
-IN              EQU     $0200,$027F     ;Input buffer
+IN              EQU     $0200           ;,$027F     ;Input buffer
 
+;TEMP_ECHO_CHAR  EQU     $0280           ;Temp char for echo
 ; Original
 ;KBD             .EQ     $D010           ;PIA.A keyboard input
 ;KBDCR           .EQ     $D011           ;PIA.A keyboard control register
 ;DSP             .EQ     $D012           ;PIA.B display output register
 ;DSPCR           .EQ     $D013           ;PIA.B display control register
 
-; We are not using a 6520 or a Terminal but serial at 0xC000 or 0x8000 
-SERIAL_DATA     EQU     $C000           ;8251 Data Address
-SERIAL_CMD      EQU     $C001           ;8251 Cmd Address
+; We are not using a 6520 or a Terminal but serial at 0xC000 
+SERIAL_DATA     EQU     $8000           ;8251 Data Address
+SERIAL_CMD      EQU     $8001           ;8251 Cmd Address
 RST_CMD         EQU     $40             ;Reset Command sent 4 times
 MODE_CMD        EQU     %01001111       ;Async mode, 8,n,1, 64x rate
-;MODE_CMD        EQU     %01001101       ;Async mode, 8,n,1, 1x rate
-
-DATA_CMD        EQU     %00010101       ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
+DATA_CMD        EQU     %00010101        ;%00110111 RTS/CTS on or %00010101 RTS/CTS off
 RX_READY        EQU     $02             ;8251 ready to recive
 
 ; This may not suit our setup
@@ -56,10 +102,10 @@ RX_READY        EQU     $02             ;8251 ready to recive
 ;-------------------------------------------------------------------------
 ;  Constants
 ;-------------------------------------------------------------------------
-							;Original Value
+
 BS              EQU     $5F;DF              ;Backspace key, arrow left key
 CR              EQU     $0D;8D              ;Carriage Return
-LF              EQU     $0A;8A              ;Line feed
+LF              EQU     $0A;8A              ;
 ESC             EQU     $1B;9B              ;ESC key
 PROMPT          EQU     $5C                 ;Prompt character, /
 
@@ -74,22 +120,24 @@ PROMPT          EQU     $5C                 ;Prompt character, /
 
 RESET           CLD                     ;Clear decimal arithmetic mode
                 SEI                     ;Disable interupts
-		LDX	$FF		;Top of Page $0100
-		TXS			;Load x into stack pointer
+                LDX     $FF             ;Stack Address in page 1
+                TXS                     ;And set stack address
                 LDA     #$00            ;Start with a reset
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
                 STA     SERIAL_CMD
-		STA	SERIAL_CMD	; 4th reset to get things back to normal, 4 resets are very important for the 8251
-                LDA     #RST_CMD        ;Should be able to reset device here
+                STA     SERIAL_CMD
+                LDA     #RST_CMD         ;Should be able to reset device here
                 STA     SERIAL_CMD
                 LDA     #MODE_CMD    
                 STA     SERIAL_CMD      
                 LDA     #DATA_CMD
                 STA     SERIAL_CMD 
                 
-                LDA     #$1B             ;For the fall through
-                LDY     #$7F             
+                ;JMP TESTPRINT          ;For a test
+                
+                LDA     #$00             ;For the fall through
+                LDY     #$00             ;Register Y has start of line
 ; Program falls through to the GETLINE routine to save some program bytes
 ; Please note that Y still holds $7F, which will cause an automatic Escape
 
@@ -103,7 +151,7 @@ NOTCR           CMP     #BS             ;Backspace key?
                 BEQ     ESCAPE          ;Yes
                 INY                     ;Advance text index
                 BPL     NEXTCHAR        ;Auto ESC if line longer than 127
-
+;wozaci jumps back to here, ?
 ESCAPE          LDA     #PROMPT         ;Print prompt character
                 JSR     ECHO            ;Output it.
 
@@ -120,7 +168,7 @@ NEXTCHAR        LDA     SERIAL_CMD      ;Wait for key press
                 AND     #RX_READY
                 BEQ     NEXTCHAR        ;No key yet!
                 LDA     SERIAL_DATA     ;Load character. (B7 should be '1')
-                STA     IN,Y            ;Add to text buffer
+                STA     IN,Y            ;Add to text buffer, y = offset from IN
                 JSR     ECHO            ;Display character
                 CMP     #CR
                 BNE     NOTCR           ;It's not CR!
@@ -137,7 +185,7 @@ SETMODE         STA     MODE            ;Set mode flags
 
 BLSKIP          INY                     ;Advance text index
 
-NEXTITEM        LDA     IN,Y            ;Get character
+NEXTITEM        LDA     IN,Y            ;Get character, y = offset from IN
                 CMP     #CR
                 BEQ     GETLINE         ;We're done if it's CR!
                 CMP     #'.'
@@ -154,12 +202,10 @@ NEXTITEM        LDA     IN,Y            ;Get character
 ; Here we're trying to parse a new hex value
 
 NEXTHEX         LDA     IN,Y            ;Get character for hex test
-                EOR     #'0';$B0        ;Map digits to 0-9, (EOR #$30 not sure what correct here!)
-										;But..... #'0' was found in wozaci so another way of doing 
-										;same thing!
+                EOR     #$30            ;Map digits to 0-9,  30 = B0 - 80
                 CMP     #9+1            ;Is it a decimal digit?
                 BCC     DIG             ;Yes!
-                ADC     #$88        	;Map letter "A"-"F" to $FA-FF, carry set above!
+                ADC     #$88            ;Map letter "A"-"F" to $FA-FF,
                 CMP     #$FA            ;Hex letter?
                 BCC     NOTHEX          ;No! Character not hex
 
@@ -264,7 +310,7 @@ PRBYTE          PHA                     ;Save A for LSD
 ;  Subroutine to print a hexadecimal digit
 ;-------------------------------------------------------------------------
 
-PRHEX           AND     #%00001111     ;Mask LSD for hex print
+PRHEX           AND     #%00001111      ;Mask LSD for hex print
                 ORA     #'0'            ;Add "0"
                 CMP     #'9'+1          ;Is it a decimal digit?
                 BCC     ECHO            ;Yes! output it
