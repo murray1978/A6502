@@ -11,7 +11,8 @@
  Any improvements and suggestions are welcome
 
  ## Errors
-  For the serial to work, select the 150 jumper for 2400 baud. 
+  For the serial to work, select the 150 jumper for 2400 baud, place a jumper between pin 22 and 24 of the 8251, this connects DTR and DSR
+  
 
  ### Specs
  6502 processor at 1Mhz
