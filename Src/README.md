@@ -7,7 +7,7 @@
 ### Wozmon and 6502mon differences.
   Added initalisation code for 8251a.
   Changed address of keyboard and display to 0xC000 for first board, then to 0x8000 for second.
-  Added 0x80 to input characters and removed 0x80 to display characters. The original keyboard used B7 to indicate a character.
+  Added 0x80 to input characters and removed 0x80 to display characters. The original keyboard used B7('@') to indicate a cursor.
   
 ### Wozmon.asm
   In the Apple 1, loaded at 0xFF00
