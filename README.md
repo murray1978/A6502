@@ -1,12 +1,16 @@
 # A6502
  6502 project running a modified wozmon and wozaci.
  As it stands ram, rom, 8251 interfaces work, yet to try the 6522 interface, the aci or loading basic from the aci.
+ ACI will not work unless you remove the rom, make a daughter board for it with 4K of ram, a connector for the ACI 
+  and have the rom selected from address F000h, the ram from E000h, and the ACI at the default C000h as the current
+  memory decodes the ROM at E000h.
   
  ## version 2 update.
  14/8/21 version 2 is included as /hardware/6502/6502-Controller.pro /hardware/6502/6502-Controller.sch and /hardware/6502/6502-Controller.kicad_pcb.
  I have fixed an issue with R2 not having a 5V supply, R2 is part of the reset circuit.
  The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
- You may have to play around with the 8251a setup for it to work.
+ ~You may have to play around with the 8251a setup for it to work.
+ 
  
  Any improvements and suggestions are welcome
 
