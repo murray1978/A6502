@@ -1047,7 +1047,7 @@ Text Notes 7600 9250 0    50   ~ 0
 Text Notes 7600 9350 0    50   ~ 0
 0x4000
 Text Notes 7600 9450 0    50   ~ 0
-0x6000
+0x6000 User ROM?
 Text Notes 7600 9550 0    50   ~ 0
 0x8000
 Text Notes 7600 9650 0    50   ~ 0

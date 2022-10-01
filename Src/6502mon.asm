@@ -11,6 +11,9 @@
 ; Stack     0x0100 -> 0x01FF
 ; key buff  0x0200 -> 0x0300?
 ;
+; FDC_CNT	0x6000 -> 0x6020?
+; BASIC		0xC000 -> 0xCFFF
+; Monitor   0xE000 -> 0xFFFF 
                 ORG     $E000
 
 ;FDC routines
