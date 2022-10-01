@@ -109,31 +109,31 @@ _A1
 Text Label 1750 1350 0    50   ~ 0
 _A2
 Text Label 1750 1450 0    50   ~ 0
-A3
+_A3
 Text Label 1750 1550 0    50   ~ 0
-A4
+_A4
 Text Label 1750 1650 0    50   ~ 0
-A5
+_A5
 Text Label 1750 1750 0    50   ~ 0
-A6
+_A6
 Text Label 1750 1850 0    50   ~ 0
-A7
+_A7
 Text Label 1750 1950 0    50   ~ 0
-A8
+_A8
 Text Label 1750 2050 0    50   ~ 0
-A9
+_A9
 Text Label 1750 2150 0    50   ~ 0
-A10
+_A10
 Text Label 1750 2250 0    50   ~ 0
-A11
+_A11
 Text Label 1750 2350 0    50   ~ 0
-A12
+_A12
 Text Label 1750 2450 0    50   ~ 0
-A13
+_A13
 Text Label 1750 2550 0    50   ~ 0
-A14
+_A14
 Text Label 1750 2650 0    50   ~ 0
-A15
+_A15
 Entry Wire Line
 	2000 1350 1900 1250
 Entry Wire Line
@@ -517,21 +517,21 @@ Wire Wire Line
 Wire Wire Line
 	7400 1550 7050 1550
 Text Label 7050 850  0    50   ~ 0
-D0
+_D0
 Text Label 7050 950  0    50   ~ 0
-D1
+_D1
 Text Label 7050 1050 0    50   ~ 0
-D2
+_D2
 Text Label 7050 1150 0    50   ~ 0
-D3
+_D3
 Text Label 7050 1250 0    50   ~ 0
-D4
+_D4
 Text Label 7050 1350 0    50   ~ 0
-D5
+_D5
 Text Label 7050 1450 0    50   ~ 0
-D6
+_D6
 Text Label 7050 1550 0    50   ~ 0
-D7
+_D7
 Text Label 6450 700  0    50   ~ 0
 DataBus6502
 Text Notes 6450 600  0    50   ~ 0
@@ -1258,37 +1258,37 @@ ControlBus
 Text Label 3050 6900 0    50   ~ 0
 ControlBus
 Text Label 6700 3900 2    50   ~ 0
-A0
+_A0
 Text Label 6700 4000 2    50   ~ 0
-A1
+_A1
 Text Label 6700 4100 2    50   ~ 0
-A2
+_A2
 Text Label 6700 4200 2    50   ~ 0
-A3
+_A3
 Text Label 6700 4300 2    50   ~ 0
-A4
+_A4
 Text Label 6700 4400 2    50   ~ 0
-A5
+_A5
 Text Label 6700 4500 2    50   ~ 0
-A6
+_A6
 Text Label 6700 4600 2    50   ~ 0
-A7
+_A7
 Text Label 6700 5850 2    50   ~ 0
-A8
+_A8
 Text Label 6700 5950 2    50   ~ 0
-A9
+_A9
 Text Label 6700 6050 2    50   ~ 0
-A10
+_A10
 Text Label 6700 6150 2    50   ~ 0
-A11
+_A11
 Text Label 6700 6250 2    50   ~ 0
-A12
+_A12
 Text Label 6700 6350 2    50   ~ 0
-A13
+_A13
 Text Label 6700 6450 2    50   ~ 0
-A14
+_A14
 Text Label 6700 6550 2    50   ~ 0
-A15
+_A15
 Entry Wire Line
 	6450 4100 6550 4000
 Entry Wire Line
@@ -1682,11 +1682,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 4650 9400 4500
 Wire Wire Line
-	9400 4500 9650 4500
-Wire Wire Line
 	9500 4650 9500 4550
-Wire Wire Line
-	9500 4550 9650 4550
 Wire Wire Line
 	9900 4550 9900 4750
 Wire Wire Line
@@ -1802,7 +1798,7 @@ Wire Bus Line
 Text Label 5650 1650 0    50   ~ 0
 ControlBus6502
 Text Label 6050 1750 0    50   ~ 0
-R~W
+_R~W
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 63AABFEB
@@ -1849,19 +1845,19 @@ Wire Bus Line
 Text Label 8950 6500 0    50   ~ 0
 ControlBus6502
 Text Label 9350 6700 0    50   ~ 0
-R~W
+_R~W
 Text Label 9350 6800 0    50   ~ 0
-~RESET
+_~RESET
 Text Label 9350 7100 0    50   ~ 0
-C000
+_C000
 Text Label 9350 7200 0    50   ~ 0
-6000
+_6000
 Text Label 9350 7300 0    50   ~ 0
-4000
+_4000
 Text Label 9350 7400 0    50   ~ 0
-2000
+_2000
 Text Label 9350 7000 0    50   ~ 0
-CLK
+_CLK
 Wire Notes Line
 	10950 7950 10950 5400
 Entry Wire Line
@@ -1941,7 +1937,7 @@ Wire Bus Line
 Text Label 2150 950  0    50   ~ 0
 ControlBus6502
 Text Label 9350 6900 0    50   ~ 0
-RDY
+_RDY
 Text Label 10750 6900 0    50   ~ 0
 RDY
 $Comp
@@ -2084,7 +2080,7 @@ Entry Wire Line
 Wire Bus Line
 	6150 4700 5700 4700
 Text Label 6250 4800 0    50   ~ 0
-CLK
+_CLK
 Text Label 5700 4700 0    50   ~ 0
 ControlBus6502
 Wire Wire Line
@@ -2224,8 +2220,6 @@ Wire Wire Line
 Connection ~ 1300 4900
 Wire Wire Line
 	1300 4900 1750 4900
-Wire Wire Line
-	9650 4550 9650 4500
 Wire Bus Line
 	2950 1600 2950 2500
 Wire Bus Line
@@ -2272,10 +2266,8 @@ Wire Bus Line
 	7950 4000 7950 6650
 Wire Bus Line
 	9650 2900 9650 4100
-Connection ~ 9650 4550
 Wire Wire Line
-	9650 4550 9900 4550
-Connection ~ 9650 4500
+	9500 4550 9900 4550
 Wire Wire Line
-	9650 4500 9900 4500
+	9400 4500 9900 4500
 $EndSCHEMATC
