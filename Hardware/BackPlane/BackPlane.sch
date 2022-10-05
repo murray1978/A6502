@@ -2220,6 +2220,10 @@ Wire Wire Line
 Connection ~ 1300 4900
 Wire Wire Line
 	1300 4900 1750 4900
+Wire Wire Line
+	9500 4550 9900 4550
+Wire Wire Line
+	9400 4500 9900 4500
 Wire Bus Line
 	2950 1600 2950 2500
 Wire Bus Line
@@ -2266,8 +2270,4 @@ Wire Bus Line
 	7950 4000 7950 6650
 Wire Bus Line
 	9650 2900 9650 4100
-Wire Wire Line
-	9500 4550 9900 4550
-Wire Wire Line
-	9400 4500 9900 4500
 $EndSCHEMATC

@@ -1,0 +1,19 @@
+GAL16V8	;20Pin device
+Register Decoder
+
+Clock	A0	A1	A2	/CS	RST	/RW	NC	NC	GND
+/RD	/WR	_A0	/_CS	/DOR	/DCR	_RST	NC	NC	VCC
+
+/_CS = 
+
+_A0 =
+
+/DOR =
+
+/DCR =
+
+_RST = /RST
+
+
+DESCRIPTION
+WD37C65	Register Decoder
