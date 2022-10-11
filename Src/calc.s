@@ -4,6 +4,7 @@
 ;         0x0200 - 0x02FF  Key buffer (plus space)
 ;         0x0400 - 0x05FF  FDC buffer (512 bytes)
 
+;Stack may need to grow from base up?
 ;Program Header
 PROG_BASE   EQU   $0600
 INP_BUFFER  EQU   $0200           ;Use the monitor buffer
@@ -20,8 +21,19 @@ ORG $0700
   STA RP_STACK_PTR
   LDA #>RP_STACK_TOP
   STA RP_STACK_PTR_H
+  DEC RP_STACK_PTR
   ;Display Message
   
+POP:
+  LDA RP_STACK_PTR
+  AND #$FF
+  BNE
+  LDY RP_STACK_PTR
+  LDA RP_STACK_TOP, y
+POP_END:
+  RTS
+PUSH:
+  RTS
   
  MSG1 DB  "RP calculator, 10 10 +  > 100",0
  
