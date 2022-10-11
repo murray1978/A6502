@@ -14,16 +14,27 @@ RP_STACK_TOP   EQU  PROG_END+$0100
 RP_STACK_PTR   EQU PROG_BASE+$02
 RP_STACK_PTR_H EQU PROG_BASE+$03
 
+; size of data type
+CHAR EQU $01
+INT8 EQU $01  ;8 bit integer 
+INT  EQU $02  ;16 bit integer
+LINT EQU $04
+
+
 ORG $0700
+
+START:
   LDA #$00
   STA CURR_CHAR   ;Set current character location to zero
   LDA #<RP_STACK_TOP
-  STA RP_STACK_PTR
+  STA RP_STACK_PTR  ;Save stack location
   LDA #>RP_STACK_TOP
   STA RP_STACK_PTR_H
   DEC RP_STACK_PTR
   ;Display Message
-  
+ 
+; POP item off the top of the stack
+; return result in .....
 POP:
   LDA RP_STACK_PTR
   AND #$FF
@@ -32,7 +43,9 @@ POP:
   LDA RP_STACK_TOP, y
 POP_END:
   RTS
+
 PUSH:
+PUSH_END:
   RTS
   
  MSG1 DB  "RP calculator, 10 10 +  > 100",0
