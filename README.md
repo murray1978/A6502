@@ -6,6 +6,7 @@
   memory decodes the ROM at 0xE000h.
   
  ## version 2 update.
+- 11/10/21 Currently the board uses a modified version of EWoz 1.0 (Not uploaded yet)
 - 14/8/21 version 2 is included as /hardware/6502/6502-Controller.pro /hardware/6502/6502-Controller.sch and /hardware/6502/6502-Controller.kicad_pcb.
 - Fixed an issue with R2 not having a 5V supply, R2 is part of the reset circuit.
 - The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
