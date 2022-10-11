@@ -10,13 +10,19 @@ INP_BUFFER  EQU   $0200           ;Use the monitor buffer
 CURR_CHAR   EQU   PROG_BASE+$01   ;Position of current char
 
 RP_STACK_TOP   EQU  PROG_END+$0100
-RP_STACK_PTR   EQU
+RP_STACK_PTR   EQU PROG_BASE+$02
+RP_STACK_PTR_H EQU PROG_BASE+$03
 
 ORG $0700
   LDA #$00
   STA CURR_CHAR   ;Set current character location to zero
+  LDA #<RP_STACK_TOP
+  STA RP_STACK_PTR
+  LDA #>RP_STACK_TOP
+  STA RP_STACK_PTR_H
+  ;Display Message
   
   
- MSG1 DB  "RP calculator, 10 10 +  > 100"
+ MSG1 DB  "RP calculator, 10 10 +  > 100",0
  
  PROG_END:
