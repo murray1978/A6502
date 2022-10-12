@@ -67,7 +67,7 @@ U 1 1 61A3D311
 P 7150 5750
 F 0 "U1" H 7175 5865 50  0000 C CNN
 F 1 "AT28C16" H 7175 5774 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W10.16mm_LongPads" H 7150 5750 50  0001 C CNN
+F 2 "Package_DIP:DIP-24_W15.24mm_Socket_LongPads" H 7150 5750 50  0001 C CNN
 F 3 "" H 7150 5750 50  0001 C CNN
 	1    7150 5750
 	1    0    0    -1  
@@ -868,6 +868,7 @@ Wire Wire Line
 	11350 8000 11750 8000
 Wire Wire Line
 	11750 8000 11750 7700
+Connection ~ 11350 8000
 Wire Bus Line
 	1650 5650 1650 6350
 Wire Bus Line
@@ -876,5 +877,6 @@ Wire Bus Line
 	6400 6750 6400 7350
 Wire Bus Line
 	3000 5950 3000 6950
-Connection ~ 11350 8000
+Text Notes 4050 1250 0    50   ~ 0
+DECODES ACI  0xC100 - 0xC200\nCode on eprom starts at 0x0000
 $EndSCHEMATC

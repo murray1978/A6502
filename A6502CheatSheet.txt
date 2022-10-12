@@ -1,0 +1,124 @@
+A6502 Cheat programs
+
+MOVE 256, C100 to 0200, 256 bytes
+40: 00 C1 00 10 ff
+50: 20 00 FF 20 0C FF
+
+Restart monitor
+50: 20 0c FF
+
+Echo a Character
+LDA char
+JSR 0xFF08
+50: A9 61 20 08 FF 20 0C FF
+
+FDC PC @ 	0x3f5 = Dataport
+			0x3f4 = MSR
+			0x3f2 = DCR
+			0x3f0 = Decoded to 0x21f0
+Ram @ 0xC000 to 0xE000
+
+MOVE 256	from E000 to C100 256 bytes
+40:00 e0 00 c1 ff
+50: 20 00 ff 20 0c ff
+
+ClearMem
+$40 mem low, $41 mem high, $42 patern,
+
+CLEAR_D_L	EQU	$40
+CLEAR_D_H	EQU	$41	;Add 1 to this number to count blocks
+CLEAR_PAT	EQU	$42
+CLEAR_BLK	EQU	$43	;Number of blocks to count
+
+
+CLEAR_BLOCK:
+	LDX	#$FF
+	LDY #$00
+	LDA	CLEAR_PAT
+CLEAR_LOOP:
+	STA (CLEAR_D_L), y
+	INY
+	DEX
+	BNE	CLEAR_LOOP
+	INC	CLEAR_D_H
+	DEC	CLEAR_BLK
+	BNE CLEAR_BLOCK
+	RTS
+	
+Clear Block	
+:10005000A2FFA000A5429140C8CAD0FAE641C6431B
+:05006000D0EE200CFFB2
+:00000001FF
+
+MOVE256:
+        LDX     MOVE_COUNT
+        SEC
+        LDA     MOVE_D_L
+        SBC     MOVE_S_L
+        LDA     MOVE_D_H
+        SBC     MOVE_S_H
+        BMI     DISPLACE
+        LDY     MOVE_COUNT
+CONT1   DEY
+        LDA     (MOVE_S_L), Y
+        STA     (MOVE_D_L), Y
+        DEX
+        BNE     CONT1
+        RTS
+DISPLACE    LDY #00
+CONT2   LDA     (MOVE_S_L), Y
+        STA     (MOVE_D_L), Y
+        INY
+        DEX
+        BNE     CONT2
+        RTS
+
+PAL	!CS = !(!AEN * A9 * A8 * A7 * A6 * A5 * A4 * !A3)
+		
+Floppy
+BASE_ADD	EQU		$23F0
+SRA			EQU		BASE_ADD+$0
+SRB			EQU		BASE_ADD+$01
+DOR			EQU		BASE_ADD+$02
+TDR			EQU		BASE_ADD+$03
+MSR			EQU		BASE_ADD+$04
+DRSR		EQU		BASE_ADD+$04
+DAR			EQU		BASE_ADD+$05
+DIR			EQU		BASE_ADD+$07
+CCR			EQU		BASE_ADD+$07
+
+FDC_READY	EQU		$80	
+FDC_RESET	EQU		$0C
+
+FDC_DRV_0       EQU     $1C     ;Cable Selected Drive 1 $14 without DMA
+FDC_DRV_1       EQU     $2D     
+FDC_DRV_2       EQU     $4E     ;Cable selected Drive 2
+FDC_DRV_3       EQU     $8F
+
+
+:1000500048A90C8DF223A5802CF423D0F968200C3C
+:02006000FF603F
+:00000001FF
+
+
+RESET_FDC:	;Step One
+	PHA
+	LDA	#$0C
+	STA	DOR
+NOT_RESET:		;poll for 
+	LDA	FDC_READY
+	BIT	MSR
+	BNE	NOT_RESET
+	PLA
+	RTS
+
+;A = drive
+MOTOR_ON:
+	STA	DOR
+	RTS
+MOTOR_OFF:
+	PHA
+	LDA #$00
+	STA	DOR
+	PLA
+	RTS
