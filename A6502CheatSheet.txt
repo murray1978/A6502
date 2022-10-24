@@ -1,4 +1,34 @@
-A6502 Cheat programs
+A6502 Cheat Sheet programs and data
+
+Memory Map
+
+;Delay
+DELAY_L EQU $20     ;5 microsecond
+DELAY_H EQU $21     ;1284 microsecond
+
+;wozEXT monitor
+XAML        EQU $24            ;*Index pointers
+XAMH        EQU $25
+STL         EQU $26
+STH         EQU $27
+L           EQU $28
+H           EQU $29
+YSAV        EQU $2A
+MODE        EQU $2B
+MSGL        EQU $2C
+MSGH        EQU $2D
+COUNTER     EQU $2E
+CRC         EQU $2F
+CRCCHECK    EQU $30
+
+;Move256
+MOVE_S_L    EQU $40         ;source A low
+MOVE_S_H    EQU $41         ;source A high
+MOVE_D_L    EQU $42         ;destination B low
+MOVE_D_H    EQU $43         ;destination B high
+MOVE_COUNT   EQU $44        ;byte count
+
+IN          EQU $0200          ;*Input buffer
 
 MOVE 256, C100 to 0200, 256 bytes
 40: 00 C1 00 10 ff
@@ -15,7 +45,7 @@ JSR 0xFF08
 FDC PC @ 	0x3f5 = Dataport
 			0x3f4 = MSR
 			0x3f2 = DCR
-			0x3f0 = Decoded to 0x21f0
+			0x3f0 = Decoded to 0x23f0
 Ram @ 0xC000 to 0xE000
 
 MOVE 256	from E000 to C100 256 bytes
@@ -80,10 +110,9 @@ BASE_ADD	EQU		$23F0
 SRA			EQU		BASE_ADD+$0
 SRB			EQU		BASE_ADD+$01
 DOR			EQU		BASE_ADD+$02
-TDR			EQU		BASE_ADD+$03
 MSR			EQU		BASE_ADD+$04
 DRSR		EQU		BASE_ADD+$04
-DAR			EQU		BASE_ADD+$05
+DAR			EQU		BASE_ADD+$05	;Fifo
 DIR			EQU		BASE_ADD+$07
 CCR			EQU		BASE_ADD+$07
 
@@ -95,22 +124,66 @@ FDC_DRV_1       EQU     $2D
 FDC_DRV_2       EQU     $4E     ;Cable selected Drive 2
 FDC_DRV_3       EQU     $8F
 
+FLD_144			EQU		$F0
+FLD_720			EQU		$F9
 
 :1000500048A90C8DF223A5802CF423D0F968200C3C
 :02006000FF603F
 :00000001FF
 
 
-RESET_FDC:	;Step One
-	PHA
-	LDA	#$0C
+FDC_INIT:	
+	PHA			
+	LDA #$00			;Turn off stuff
+	STA DOR
+	LDA	#FDC_RESET		;SW reset
 	STA	DOR
-NOT_RESET:		;poll for 
-	LDA	FDC_READY
-	BIT	MSR
-	BNE	NOT_RESET
-	PLA
-	RTS
+	LDA #FLD_144	;set data rate
+	STA DAR
+	LDY #$04
+INIT_LOOP1:
+	;Issue sense int command
+	LDA #$08
+	STA DAR
+	;read STO & PCN
+	LDA DAR
+	JSR ECHO
+	LDA #' '
+	JSR ECHO
+	JMP $ + 1
+	LDA DAR
+	JSR ECHO
+	LDA #' '
+	JSR ECHO	
+	;Loop 4 times
+	DEY
+	BNE INIT_LOOP1
+	
+	;Parameters different from default?
+	BEQ INIT_SPEC
+	;issue configure command
+	LDA #$13	;Configure commmand
+	STA DOR
+	LDA #00		;
+	STA DOR
+	LDA %00000000	;0, 0-no emplied seek, 0-FIFO enable, 0 
+	STA DOR
+	LDA #$00
+	STA DOR
+INIT_SPEC:
+	;issue specify command, table 6-10
+	LDA #$02
+	STA DOR
+	LDA #$11
+	STA DOR
+	LDA #$FF
+	STA DOR
+	RTS	;Ready to issue commands
+	
+FDC_RECAL:
+	; Enable Drive
+	; Issue recalibrate or seek command
+
 
 ;A = drive
 MOTOR_ON:
@@ -121,4 +194,41 @@ MOTOR_OFF:
 	LDA #$00
 	STA	DOR
 	PLA
+	RTS
+
+;Inital code, based of 9-2 pg 44
+FDC_GET_BYTE:
+	;Init timerout counter
+	LDY	#$FF
+GET_BYTE_LOOP:
+	;read msr
+	LDA MSR
+	AND	%11000000			;Test 
+	BEQ FDC_GET_BYTE_END	;Zero? and 
+	;decrement counter
+	DEY
+	BNE GET_BYTE_LOOP		
+	LDA #$00
+	STA ERROR
+	RTS
+FDC_GET_BYTE_END:
+	LDA #$01
+	STA ERROR
+	LDA FIFO
+	RTS
+	
+;Byte in A, inital code from pg 43, 9.1
+FDC_SEND_BYTE:
+	LDY #$20	;Initalise time out
+FDC_SEND_BYTE_LOOP:
+	;Read MSR
+	LDA	MSR
+	AND %11000000
+	BEQ	FDC_SEND_BYTE_END
+	DEY
+	BNE FDC_SEND_BYTE_LOOP
+	RTS
+FDC_GET_BYTE_END:
+	LDA #$01
+	STA ERROR
 	RTS
