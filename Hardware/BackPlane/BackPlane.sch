@@ -394,17 +394,6 @@ Wire Notes Line
 Wire Notes Line
 	200  3000 5250 3000
 $Comp
-L 74xx:74LS373 U2
-U 1 1 613346F7
-P 6500 4500
-F 0 "U2" H 6500 5481 50  0000 C CNN
-F 1 "74LS373" H 6500 5390 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 6500 4500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 6500 4500 50  0001 C CNN
-	1    6500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS245 U1
 U 1 1 61334D14
 P 7900 1350
@@ -529,17 +518,6 @@ Text Label 6450 700  0    50   ~ 0
 DataBus6502
 Text Notes 6450 600  0    50   ~ 0
 Check Truth Table
-$Comp
-L 74xx:74LS373 U3
-U 1 1 61368F94
-P 6500 6450
-F 0 "U3" H 6500 7431 50  0000 C CNN
-F 1 "74LS373" H 6500 7340 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 6500 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 6500 6450 50  0001 C CNN
-	1    6500 6450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J4
 U 1 1 6139358D
@@ -1351,25 +1329,13 @@ Entry Wire Line
 Text GLabel 6700 5300 2    50   Input ~ 0
 GND
 Wire Wire Line
-	6700 5300 6500 5300
-Wire Wire Line
 	6000 5300 6000 5000
-Connection ~ 6500 5300
-Wire Wire Line
-	6500 5300 6000 5300
 Text GLabel 6800 7250 2    50   Input ~ 0
 GND
 Wire Wire Line
-	6800 7250 6500 7250
-Wire Wire Line
 	6000 7250 6000 6950
-Connection ~ 6500 7250
-Wire Wire Line
-	6500 7250 6000 7250
 Text GLabel 6350 3700 0    50   Input ~ 0
 5V
-Wire Wire Line
-	6350 3700 6500 3700
 Text GLabel 6350 5650 0    50   Input ~ 0
 5V
 Wire Wire Line
@@ -1778,10 +1744,7 @@ F 3 "~" H 6950 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 3700 6950 3700
-Wire Wire Line
 	6950 3700 6950 3600
-Connection ~ 6500 3700
 Entry Wire Line
 	5950 1650 6050 1750
 Wire Bus Line
@@ -1804,17 +1767,6 @@ $EndComp
 Wire Wire Line
 	5600 7250 6000 7250
 Connection ~ 6000 7250
-$Comp
-L 74xx:74LS373 U4
-U 1 1 63AE42CE
-P 9300 6500
-F 0 "U4" H 9300 7481 50  0000 C CNN
-F 1 "74LS373" H 9300 7390 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 9300 6500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 9300 6500 50  0001 C CNN
-	1    9300 6500
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	8150 7250 8150 4700
 Entry Wire Line
@@ -2010,18 +1962,6 @@ Wire Wire Line
 	9500 2050 9700 2050
 Wire Wire Line
 	9700 1050 9550 1050
-Text GLabel 9750 500  0    50   Input ~ 0
-GND
-Wire Wire Line
-	10600 500  10600 950 
-Connection ~ 10600 950 
-Wire Wire Line
-	10600 950  10600 1450
-Connection ~ 10600 1450
-Wire Wire Line
-	10600 1450 10600 1950
-Text GLabel 10600 1450 0    50   Input ~ 0
-GND
 NoConn ~ 10350 500 
 NoConn ~ 11200 500 
 NoConn ~ 11200 950 
@@ -2044,14 +1984,9 @@ Text GLabel 9050 5700 0    50   Input ~ 0
 Wire Wire Line
 	9050 5700 9300 5700
 Wire Wire Line
-	9550 7300 9300 7300
-Wire Wire Line
 	8800 7000 8600 7000
 Wire Wire Line
 	8600 7000 8600 7300
-Wire Wire Line
-	8600 7300 9300 7300
-Connection ~ 9300 7300
 Wire Wire Line
 	6000 4900 5550 4900
 Wire Wire Line
@@ -2244,6 +2179,264 @@ Text Label 6050 1900 0    50   ~ 0
 _CLK
 NoConn ~ 8800 6300
 NoConn ~ 9800 6300
+$Comp
+L 74xx:74LS573 U3
+U 1 1 63811327
+P 6500 6450
+F 0 "U3" H 6500 7431 50  0000 C CNN
+F 1 "74LS573" H 6500 7340 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 6500 6450 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 6500 6450 50  0001 C CNN
+	1    6500 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7250 6500 7250
+Connection ~ 6500 7250
+Wire Wire Line
+	6500 7250 6800 7250
+Wire Wire Line
+	8600 7300 9300 7300
+$Comp
+L 74xx:74LS573 U4
+U 1 1 638137EC
+P 9300 6500
+F 0 "U4" H 9300 7481 50  0000 C CNN
+F 1 "74LS573" H 9300 7390 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 9300 6500 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 9300 6500 50  0001 C CNN
+	1    9300 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 7300
+Wire Wire Line
+	9300 7300 9550 7300
+Wire Wire Line
+	6000 5300 6500 5300
+Wire Wire Line
+	6350 3700 6500 3700
+$Comp
+L 74xx:74LS573 U2
+U 1 1 638142F1
+P 6500 4500
+F 0 "U2" H 6500 5481 50  0000 C CNN
+F 1 "74LS573" H 6500 5390 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 6500 4500 50  0001 C CNN
+F 3 "74xx/74hc573.pdf" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 5300
+Wire Wire Line
+	6500 5300 6700 5300
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6950 3700
+NoConn ~ 10600 950 
+NoConn ~ 10600 500 
+NoConn ~ 10600 1450
+NoConn ~ 10600 1950
+NoConn ~ 9750 500 
+Text Label 10750 3850 0    50   ~ 0
+_A0
+Text Label 10750 3950 0    50   ~ 0
+_A1
+Text Label 10750 4050 0    50   ~ 0
+_A2
+Text Label 10750 4150 0    50   ~ 0
+_A3
+Text Label 10750 4250 0    50   ~ 0
+_A4
+Text Label 10750 4350 0    50   ~ 0
+_A5
+Text Label 10750 4450 0    50   ~ 0
+_A6
+Text Label 10750 4550 0    50   ~ 0
+_A7
+Text Label 10750 4650 0    50   ~ 0
+_A8
+Text Label 10750 4750 0    50   ~ 0
+_A9
+Text Label 10750 4850 0    50   ~ 0
+_A10
+Text Label 10750 4950 0    50   ~ 0
+_A11
+Text Label 10750 5050 0    50   ~ 0
+_A12
+Text Label 10750 5150 0    50   ~ 0
+_A13
+Text Label 10750 5250 0    50   ~ 0
+_A14
+Text Label 10750 5350 0    50   ~ 0
+_A15
+Entry Wire Line
+	11000 4050 10900 3950
+Entry Wire Line
+	10900 3850 11000 3950
+Entry Wire Line
+	10900 4050 11000 4150
+Entry Wire Line
+	10900 4150 11000 4250
+Entry Wire Line
+	10900 4250 11000 4350
+Entry Wire Line
+	10900 4350 11000 4450
+Entry Wire Line
+	10900 4450 11000 4550
+Entry Wire Line
+	10900 4550 11000 4650
+Entry Wire Line
+	10900 4650 11000 4750
+Entry Wire Line
+	10900 4750 11000 4850
+Entry Wire Line
+	10900 4850 11000 4950
+Entry Wire Line
+	10900 4950 11000 5050
+Entry Wire Line
+	10900 5050 11000 5150
+Entry Wire Line
+	10900 5150 11000 5250
+Entry Wire Line
+	10900 5250 11000 5350
+Entry Wire Line
+	10900 5350 11000 5450
+Wire Wire Line
+	10750 4950 10900 4950
+Wire Wire Line
+	10900 5050 10750 5050
+Wire Wire Line
+	10750 5150 10900 5150
+Wire Wire Line
+	10750 5250 10900 5250
+Wire Wire Line
+	10750 5350 10900 5350
+Wire Wire Line
+	10750 3850 10900 3850
+Wire Wire Line
+	10750 3950 10900 3950
+Wire Wire Line
+	10750 4050 10900 4050
+Wire Wire Line
+	10750 4150 10900 4150
+Wire Wire Line
+	10750 4250 10900 4250
+Wire Wire Line
+	10750 4350 10900 4350
+Wire Wire Line
+	10750 4550 10900 4550
+Wire Wire Line
+	10750 4650 10900 4650
+Wire Wire Line
+	10750 4750 10900 4750
+Wire Wire Line
+	10750 4850 10900 4850
+Wire Bus Line
+	11000 3950 11550 3950
+Text Label 11000 3950 0    50   ~ 0
+AddressBus6502
+Wire Bus Line
+	11600 5850 11100 5850
+Entry Wire Line
+	11100 6600 11000 6700
+Entry Wire Line
+	11100 6500 11000 6600
+Entry Wire Line
+	11100 6400 11000 6500
+Entry Wire Line
+	11100 6300 11000 6400
+Entry Wire Line
+	11100 6200 11000 6300
+Entry Wire Line
+	11100 6100 11000 6200
+Entry Wire Line
+	11100 6000 11000 6100
+Entry Wire Line
+	11100 5900 11000 6000
+Text Label 11000 6000 2    50   ~ 0
+_D0
+Text Label 11000 6100 2    50   ~ 0
+_D1
+Text Label 11000 6200 2    50   ~ 0
+_D2
+Text Label 11000 6300 2    50   ~ 0
+_D3
+Text Label 11000 6400 2    50   ~ 0
+_D4
+Text Label 11000 6500 2    50   ~ 0
+_D5
+Text Label 11000 6600 2    50   ~ 0
+_D6
+Text Label 11000 6700 2    50   ~ 0
+_D7
+Text Label 11600 5850 2    50   ~ 0
+DataBus6502
+$Comp
+L Device:R_Network08 RN1
+U 1 1 63B0FE21
+P 10600 6400
+F 0 "RN1" V 9983 6400 50  0000 C CNN
+F 1 "R_Network08" V 10074 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11075 6400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 10600 6400 50  0001 C CNN
+	1    10600 6400
+	0    -1   1    0   
+$EndComp
+Text GLabel 10300 6950 0    50   Input ~ 0
+5V
+Wire Wire Line
+	10300 6950 10400 6950
+Wire Wire Line
+	11000 6700 10800 6700
+Wire Wire Line
+	10800 6600 11000 6600
+Wire Wire Line
+	11000 6500 10800 6500
+Wire Wire Line
+	10800 6400 11000 6400
+Wire Wire Line
+	11000 6300 10800 6300
+Wire Wire Line
+	10800 6200 11000 6200
+Wire Wire Line
+	11000 6100 10800 6100
+Wire Wire Line
+	10800 6000 11000 6000
+$Comp
+L Device:R_Network08 RN3
+U 1 1 63D2AFCD
+P 10550 5050
+F 0 "RN3" V 10950 5100 50  0000 C CNN
+F 1 "R_Network08" V 11050 4950 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11025 5050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 10550 5050 50  0001 C CNN
+	1    10550 5050
+	0    -1   1    0   
+$EndComp
+Text GLabel 10200 5350 0    50   Input ~ 0
+5V
+Wire Wire Line
+	10200 5350 10350 5350
+Wire Wire Line
+	10400 6000 10400 6950
+Connection ~ 10350 4650
+Wire Wire Line
+	10350 4650 10350 5350
+Wire Wire Line
+	10750 4450 10900 4450
+$Comp
+L Device:R_Network08 RN2
+U 1 1 63D2C603
+P 10550 4250
+F 0 "RN2" V 9900 4250 50  0000 C CNN
+F 1 "R_Network08" V 10000 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 11025 4250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 10550 4250 50  0001 C CNN
+	1    10550 4250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 3850 10350 4650
 Wire Bus Line
 	2950 1600 2950 2500
 Wire Bus Line
@@ -2256,6 +2449,8 @@ Wire Bus Line
 	350  1550 350  2450
 Wire Bus Line
 	10150 5800 10150 6800
+Wire Bus Line
+	11100 5850 11100 6600
 Wire Bus Line
 	8300 5800 8300 6700
 Wire Bus Line
@@ -2290,4 +2485,6 @@ Wire Bus Line
 	7250 4100 7250 6750
 Wire Bus Line
 	8950 2750 8950 3950
+Wire Bus Line
+	11000 3950 11000 5450
 $EndSCHEMATC
