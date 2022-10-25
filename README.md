@@ -6,6 +6,7 @@
   memory decodes the ROM at 0xE000h.
   
  ## version 2 update.
+- 11/10/21 Currently the board uses a modified version of EWoz 1.0 (Not uploaded yet)
 - 14/8/21 version 2 is included as /hardware/6502/6502-Controller.pro /hardware/6502/6502-Controller.sch and /hardware/6502/6502-Controller.kicad_pcb.
 - Fixed an issue with R2 not having a 5V supply, R2 is part of the reset circuit.
 - The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
@@ -60,6 +61,13 @@
  - [x]  74hc4060 pin out has to be updated, 
 
 ## Future additions
- - Basic, looking at adding a basic ROM at 0xA000, 8Kb or 16Kb in size
- - FDC at 0x????
+
+ - Basic, looking at adding a basic ROM at 0xA000, 8Kb https://
+ - FDC at 0x23F0 (via isa adapter and 82077 FDC controller)
  - An LCD 2x16 Display or CRT monitor.
+ 
+ ## Version 3 idea's
+  - Redesign main board as a edge card including address, data and control bus buffers, retaining Serial I/O
+  - Have I/O take up a small chunk of memory, from 0xC000 to 0xE000
+  - Backplane with 5V PSU
+  - Basic in EPROM, bank switched, monitor code moved down to low memory, (BBC Micro like)
