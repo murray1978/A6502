@@ -1,0 +1,262 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1800 2300 0    50   ~ 0
+Test Reset Curcuit\n
+$Comp
+L 74xx:74HC14 U1
+U 7 1 60A067B2
+P 1950 3250
+F 0 "U1" H 2180 3296 50  0000 L CNN
+F 1 "74HC14" H 2180 3205 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1950 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1950 3250 50  0001 C CNN
+	7    1950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60A0751D
+P 2500 3200
+F 0 "C3" H 2615 3246 50  0000 L CNN
+F 1 "100n" H 2615 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2538 3050 50  0001 C CNN
+F 3 "~" H 2500 3200 50  0001 C CNN
+	1    2500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 1 1 60A07BF1
+P 6950 3250
+F 0 "U1" H 6950 3567 50  0000 C CNN
+F 1 "74HC14" H 6950 3476 50  0000 C CNN
+F 2 "" H 6950 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 60A0A3EA
+P 7850 3250
+F 0 "J1" H 7930 3298 50  0000 L CNN
+F 1 "~Reset" H 7930 3200 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7850 3250 50  0001 C CNN
+F 3 "~" H 7850 3250 50  0001 C CNN
+	1    7850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60A0EB6F
+P 3000 3350
+F 0 "J2" H 2918 3025 50  0000 C CNN
+F 1 "Switch" H 2918 3116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 3350 50  0001 C CNN
+F 3 "~" H 3000 3350 50  0001 C CNN
+	1    3000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60A0F483
+P 3350 2950
+F 0 "R1" H 3420 2996 50  0000 L CNN
+F 1 "10k" H 3420 2905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 2950 50  0001 C CNN
+F 3 "~" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60A0F897
+P 3600 3250
+F 0 "R2" V 3393 3250 50  0000 C CNN
+F 1 "47K" V 3484 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3530 3250 50  0001 C CNN
+F 3 "~" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60A101AE
+P 5350 3400
+F 0 "R3" H 5280 3354 50  0000 R CNN
+F 1 "82K" H 5280 3445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5280 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5350 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60A10EC9
+P 6100 3250
+F 0 "R4" V 6307 3250 50  0000 C CNN
+F 1 "1K" V 6216 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6030 3250 50  0001 C CNN
+F 3 "~" H 6100 3250 50  0001 C CNN
+	1    6100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N914 D1
+U 1 1 60A11972
+P 5700 3400
+F 0 "D1" V 5654 3479 50  0000 L CNN
+F 1 "1N914" V 5745 3479 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5700 3225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 6 1 60A163CC
+P 4400 3250
+F 0 "U1" H 4400 3567 50  0000 C CNN
+F 1 "74HC14" H 4400 3476 50  0000 C CNN
+F 2 "" H 4400 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4400 3250 50  0001 C CNN
+	6    4400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 60A18159
+P 3900 3400
+F 0 "C1" H 4015 3446 50  0000 L CNN
+F 1 "1uf" H 4015 3355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3900 3400 50  0001 C CNN
+F 3 "~" H 3900 3400 50  0001 C CNN
+	1    3900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 60A18874
+P 5000 3250
+F 0 "C2" V 5252 3250 50  0000 C CNN
+F 1 "1uf" V 5161 3250 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5000 3250 50  0001 C CNN
+F 3 "~" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 3250 3350 3250
+Wire Wire Line
+	3750 3250 3900 3250
+Connection ~ 3900 3250
+Wire Wire Line
+	3900 3250 4100 3250
+Wire Wire Line
+	4700 3250 4850 3250
+Wire Wire Line
+	5150 3250 5350 3250
+Connection ~ 5350 3250
+Wire Wire Line
+	5350 3250 5700 3250
+Connection ~ 5700 3250
+Wire Wire Line
+	5700 3250 5950 3250
+Wire Wire Line
+	6250 3250 6650 3250
+Wire Wire Line
+	7250 3250 7650 3250
+Wire Wire Line
+	7650 3150 7650 2700
+Wire Wire Line
+	7650 2700 3350 2700
+Wire Wire Line
+	3350 2700 3350 2800
+Connection ~ 3350 2700
+Wire Wire Line
+	3200 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 3750
+Wire Wire Line
+	3350 3750 3900 3750
+Wire Wire Line
+	7650 3750 7650 3350
+Connection ~ 3350 3750
+Wire Wire Line
+	5700 3550 5700 3750
+Connection ~ 5700 3750
+Wire Wire Line
+	5700 3750 7650 3750
+Wire Wire Line
+	5350 3550 5350 3750
+Connection ~ 5350 3750
+Wire Wire Line
+	5350 3750 5700 3750
+Wire Wire Line
+	3900 3550 3900 3750
+Connection ~ 3900 3750
+Wire Wire Line
+	3900 3750 5350 3750
+Wire Wire Line
+	3350 3100 3350 3250
+Connection ~ 3350 3250
+Wire Wire Line
+	3350 3250 3450 3250
+Wire Wire Line
+	3350 2700 2500 2700
+Wire Wire Line
+	1950 2700 1950 2750
+Wire Wire Line
+	1950 3750 2500 3750
+Wire Wire Line
+	2500 3350 2500 3750
+Connection ~ 2500 3750
+Wire Wire Line
+	2500 3750 3350 3750
+Wire Wire Line
+	2500 3050 2500 2700
+Connection ~ 2500 2700
+Wire Wire Line
+	2500 2700 1950 2700
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60A2B122
+P 1950 2700
+F 0 "#FLG0101" H 1950 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2873 50  0000 C CNN
+F 2 "" H 1950 2700 50  0001 C CNN
+F 3 "~" H 1950 2700 50  0001 C CNN
+	1    1950 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2700
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60A2B409
+P 1950 3750
+F 0 "#FLG0102" H 1950 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3923 50  0000 C CNN
+F 2 "" H 1950 3750 50  0001 C CNN
+F 3 "~" H 1950 3750 50  0001 C CNN
+	1    1950 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 1950 3750
+Text Label 6400 3750 0    50   ~ 0
+GND
+Text Label 6350 2700 0    50   ~ 0
+5V
+$EndSCHEMATC

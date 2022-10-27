@@ -9,10 +9,13 @@
 - 11/10/21 Currently the board uses a modified version of EWoz 1.0 (Not uploaded yet)
 - 14/8/21 version 2 is included as /hardware/6502/6502-Controller.pro /hardware/6502/6502-Controller.sch and /hardware/6502/6502-Controller.kicad_pcb.
 - Fixed an issue with R2 not having a 5V supply, R2 is part of the reset circuit.
-- The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
- -~You may have to play around with the 8251a setup for it to work.
+- ~The firmware is 6502mon.asm and 6502aci.asm both have yet to be run.
+- ~You may have to play around with the 8251a setup for it to work.
+### Backplane 
+ - Version 1 of the backplane in progress.
+
  
- 
+ ## Improvements
  - Any improvements and suggestions are welcome
 
  ## Errors
