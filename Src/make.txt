@@ -1,0 +1,1101 @@
+basic.s:84: Error: ':' expected
+basic.s:84: Error: Unexpected trailing garbage characters
+basic.s:86: Error: Symbol 'defs' is already defined
+basic.s:86: Error: ':' expected
+basic.s:86: Error: Symbol '.size' is already defined
+basic.s:86: Error: Unexpected trailing garbage characters
+basic.s:88: Error: Symbol 'defs' is already defined
+basic.s:88: Error: ':' expected
+basic.s:88: Error: Symbol '.size' is already defined
+basic.s:88: Error: Unexpected trailing garbage characters
+basic.s:90: Error: Symbol 'defs' is already defined
+basic.s:90: Error: ':' expected
+basic.s:90: Error: Symbol '.size' is already defined
+basic.s:90: Error: Unexpected trailing garbage characters
+basic.s:94: Error: Symbol 'defs' is already defined
+basic.s:94: Error: ':' expected
+basic.s:94: Error: Symbol '.size' is already defined
+basic.s:94: Error: Unexpected trailing garbage characters
+basic.s:96: Error: Symbol 'defs' is already defined
+basic.s:96: Error: ':' expected
+basic.s:96: Error: Symbol '.size' is already defined
+basic.s:96: Error: Unexpected trailing garbage characters
+basic.s:98: Error: Symbol 'defs' is already defined
+basic.s:98: Error: ':' expected
+basic.s:98: Error: Symbol '.size' is already defined
+basic.s:98: Error: Unexpected trailing garbage characters
+basic.s:100: Error: Symbol 'defs' is already defined
+basic.s:100: Error: ':' expected
+basic.s:100: Error: Symbol '.size' is already defined
+basic.s:100: Error: Unexpected trailing garbage characters
+basic.s:103: Error: Symbol 'defs' is already defined
+basic.s:103: Error: ':' expected
+basic.s:103: Error: Symbol '.size' is already defined
+basic.s:103: Error: Unexpected trailing garbage characters
+basic.s:104: Error: Hexadecimal digit expected
+basic.s:108: Error: Symbol 'defs' is already defined
+basic.s:108: Error: ':' expected
+basic.s:108: Error: Symbol '.size' is already defined
+basic.s:108: Error: Unexpected trailing garbage characters
+basic.s:110: Error: Symbol 'defs' is already defined
+basic.s:110: Error: ':' expected
+basic.s:110: Error: Symbol '.size' is already defined
+basic.s:110: Error: Unexpected trailing garbage characters
+basic.s:112: Error: Symbol 'defs' is already defined
+basic.s:112: Error: ':' expected
+basic.s:112: Error: Symbol '.size' is already defined
+basic.s:112: Error: Unexpected trailing garbage characters
+basic.s:114: Error: Symbol 'defs' is already defined
+basic.s:114: Error: ':' expected
+basic.s:114: Error: Symbol '.size' is already defined
+basic.s:114: Error: Unexpected trailing garbage characters
+basic.s:116: Error: Symbol 'defs' is already defined
+basic.s:116: Error: ':' expected
+basic.s:116: Error: Symbol '.size' is already defined
+basic.s:116: Error: Unexpected trailing garbage characters
+basic.s:118: Error: Symbol 'defs' is already defined
+basic.s:118: Error: ':' expected
+basic.s:118: Error: Symbol '.size' is already defined
+basic.s:118: Error: Unexpected trailing garbage characters
+basic.s:120: Error: Symbol 'defs' is already defined
+basic.s:120: Error: ':' expected
+basic.s:120: Error: Symbol '.size' is already defined
+basic.s:120: Error: Unexpected trailing garbage characters
+basic.s:122: Error: Symbol 'defs' is already defined
+basic.s:122: Error: ':' expected
+basic.s:122: Error: Symbol '.size' is already defined
+basic.s:122: Error: Unexpected trailing garbage characters
+basic.s:124: Error: Symbol 'defs' is already defined
+basic.s:124: Error: ':' expected
+basic.s:124: Error: Symbol '.size' is already defined
+basic.s:124: Error: Unexpected trailing garbage characters
+basic.s:126: Error: Symbol 'defs' is already defined
+basic.s:126: Error: ':' expected
+basic.s:126: Error: Symbol '.size' is already defined
+basic.s:126: Error: Unexpected trailing garbage characters
+basic.s:130: Error: Symbol 'defs' is already defined
+basic.s:130: Error: ':' expected
+basic.s:130: Error: Symbol '.size' is already defined
+basic.s:130: Error: Unexpected trailing garbage characters
+basic.s:132: Error: Symbol 'defs' is already defined
+basic.s:132: Error: ':' expected
+basic.s:132: Error: Symbol '.size' is already defined
+basic.s:132: Error: Unexpected trailing garbage characters
+basic.s:134: Error: Symbol 'defs' is already defined
+basic.s:134: Error: ':' expected
+basic.s:134: Error: Symbol '.size' is already defined
+basic.s:134: Error: Unexpected trailing garbage characters
+basic.s:136: Error: Symbol 'defs' is already defined
+basic.s:136: Error: ':' expected
+basic.s:136: Error: Symbol '.size' is already defined
+basic.s:136: Error: Unexpected trailing garbage characters
+basic.s:138: Error: Symbol 'defs' is already defined
+basic.s:138: Error: ':' expected
+basic.s:138: Error: Symbol '.size' is already defined
+basic.s:138: Error: Unexpected trailing garbage characters
+basic.s:140: Error: Symbol 'defs' is already defined
+basic.s:140: Error: ':' expected
+basic.s:140: Error: Symbol '.size' is already defined
+basic.s:140: Error: Unexpected trailing garbage characters
+basic.s:143: Error: Symbol 'defs' is already defined
+basic.s:143: Error: ':' expected
+basic.s:143: Error: Symbol '.size' is already defined
+basic.s:143: Error: Unexpected trailing garbage characters
+basic.s:145: Error: Symbol 'defs' is already defined
+basic.s:145: Error: ':' expected
+basic.s:145: Error: Symbol '.size' is already defined
+basic.s:145: Error: Unexpected trailing garbage characters
+basic.s:147: Error: Symbol 'defs' is already defined
+basic.s:147: Error: ':' expected
+basic.s:147: Error: Symbol '.size' is already defined
+basic.s:147: Error: Unexpected trailing garbage characters
+basic.s:149: Error: Symbol 'defs' is already defined
+basic.s:149: Error: ':' expected
+basic.s:149: Error: Symbol '.size' is already defined
+basic.s:149: Error: Unexpected trailing garbage characters
+basic.s:151: Error: Symbol 'defs' is already defined
+basic.s:151: Error: ':' expected
+basic.s:151: Error: Symbol '.size' is already defined
+basic.s:151: Error: Unexpected trailing garbage characters
+basic.s:153: Error: Symbol 'defs' is already defined
+basic.s:153: Error: ':' expected
+basic.s:153: Error: Symbol '.size' is already defined
+basic.s:153: Error: Unexpected trailing garbage characters
+basic.s:155: Error: Symbol 'defs' is already defined
+basic.s:155: Error: ':' expected
+basic.s:155: Error: Symbol '.size' is already defined
+basic.s:155: Error: Unexpected trailing garbage characters
+basic.s:157: Error: Symbol 'defs' is already defined
+basic.s:157: Error: ':' expected
+basic.s:157: Error: Symbol '.size' is already defined
+basic.s:157: Error: Unexpected trailing garbage characters
+basic.s:159: Error: Symbol 'defs' is already defined
+basic.s:159: Error: ':' expected
+basic.s:159: Error: Symbol '.size' is already defined
+basic.s:159: Error: Unexpected trailing garbage characters
+basic.s:161: Error: Symbol 'defs' is already defined
+basic.s:161: Error: ':' expected
+basic.s:161: Error: Symbol '.size' is already defined
+basic.s:161: Error: Unexpected trailing garbage characters
+basic.s:163: Error: Symbol 'defs' is already defined
+basic.s:163: Error: ':' expected
+basic.s:163: Error: Symbol '.size' is already defined
+basic.s:163: Error: Unexpected trailing garbage characters
+basic.s:165: Error: Symbol 'defs' is already defined
+basic.s:165: Error: ':' expected
+basic.s:165: Error: Symbol '.size' is already defined
+basic.s:165: Error: Unexpected trailing garbage characters
+basic.s:167: Error: Symbol 'defs' is already defined
+basic.s:167: Error: ':' expected
+basic.s:167: Error: Symbol '.size' is already defined
+basic.s:167: Error: Unexpected trailing garbage characters
+basic.s:169: Error: Symbol 'defs' is already defined
+basic.s:169: Error: ':' expected
+basic.s:169: Error: Symbol '.size' is already defined
+basic.s:169: Error: Unexpected trailing garbage characters
+basic.s:171: Error: Symbol 'defs' is already defined
+basic.s:171: Error: ':' expected
+basic.s:171: Error: Symbol '.size' is already defined
+basic.s:171: Error: Unexpected trailing garbage characters
+basic.s:173: Error: Symbol 'defs' is already defined
+basic.s:173: Error: ':' expected
+basic.s:173: Error: Symbol '.size' is already defined
+basic.s:173: Error: Unexpected trailing garbage characters
+basic.s:175: Error: Symbol 'defs' is already defined
+basic.s:175: Error: ':' expected
+basic.s:175: Error: Symbol '.size' is already defined
+basic.s:175: Error: Unexpected trailing garbage characters
+basic.s:177: Error: Symbol 'defs' is already defined
+basic.s:177: Error: ':' expected
+basic.s:177: Error: Symbol '.size' is already defined
+basic.s:177: Error: Unexpected trailing garbage characters
+basic.s:180: Error: Symbol 'defs' is already defined
+basic.s:180: Error: ':' expected
+basic.s:180: Error: Symbol '.size' is already defined
+basic.s:180: Error: Unexpected trailing garbage characters
+basic.s:182: Error: Symbol 'defs' is already defined
+basic.s:182: Error: ':' expected
+basic.s:182: Error: Symbol '.size' is already defined
+basic.s:182: Error: Unexpected trailing garbage characters
+basic.s:184: Error: Symbol 'defs' is already defined
+basic.s:184: Error: ':' expected
+basic.s:184: Error: Symbol '.size' is already defined
+basic.s:184: Error: Unexpected trailing garbage characters
+basic.s:188: Error: Symbol 'defs' is already defined
+basic.s:188: Error: ':' expected
+basic.s:188: Error: Symbol '.size' is already defined
+basic.s:188: Error: Unexpected trailing garbage characters
+basic.s:191: Error: Symbol 'defs' is already defined
+basic.s:191: Error: ':' expected
+basic.s:191: Error: Symbol '.size' is already defined
+basic.s:191: Error: Unexpected trailing garbage characters
+basic.s:193: Error: Symbol 'defs' is already defined
+basic.s:193: Error: ':' expected
+basic.s:193: Error: Symbol '.size' is already defined
+basic.s:193: Error: Unexpected trailing garbage characters
+basic.s:195: Error: Symbol 'defs' is already defined
+basic.s:195: Error: ':' expected
+basic.s:195: Error: Symbol '.size' is already defined
+basic.s:195: Error: Unexpected trailing garbage characters
+basic.s:199: Error: Symbol 'defs' is already defined
+basic.s:199: Error: ':' expected
+basic.s:199: Error: Symbol '.size' is already defined
+basic.s:199: Error: Unexpected trailing garbage characters
+basic.s:201: Error: Symbol 'defs' is already defined
+basic.s:201: Error: ':' expected
+basic.s:201: Error: Symbol '.size' is already defined
+basic.s:201: Error: Unexpected trailing garbage characters
+basic.s:204: Error: Symbol 'defs' is already defined
+basic.s:204: Error: ':' expected
+basic.s:204: Error: Symbol '.size' is already defined
+basic.s:204: Error: Unexpected trailing garbage characters
+basic.s:206: Error: Symbol 'defs' is already defined
+basic.s:206: Error: ':' expected
+basic.s:206: Error: Symbol '.size' is already defined
+basic.s:206: Error: Unexpected trailing garbage characters
+basic.s:208: Error: Symbol 'defs' is already defined
+basic.s:208: Error: ':' expected
+basic.s:208: Error: Symbol '.size' is already defined
+basic.s:208: Error: Unexpected trailing garbage characters
+basic.s:211: Error: Symbol 'defs' is already defined
+basic.s:211: Error: ':' expected
+basic.s:211: Error: Symbol '.size' is already defined
+basic.s:211: Error: Unexpected trailing garbage characters
+basic.s:213: Error: Symbol 'defs' is already defined
+basic.s:213: Error: ':' expected
+basic.s:213: Error: Symbol '.size' is already defined
+basic.s:213: Error: Unexpected trailing garbage characters
+basic.s:215: Error: Symbol 'defs' is already defined
+basic.s:215: Error: ':' expected
+basic.s:215: Error: Symbol '.size' is already defined
+basic.s:215: Error: Unexpected trailing garbage characters
+basic.s:217: Error: Symbol 'defs' is already defined
+basic.s:217: Error: ':' expected
+basic.s:217: Error: Symbol '.size' is already defined
+basic.s:217: Error: Unexpected trailing garbage characters
+basic.s:220: Error: Symbol 'defs' is already defined
+basic.s:220: Error: ':' expected
+basic.s:220: Error: Symbol '.size' is already defined
+basic.s:220: Error: Unexpected trailing garbage characters
+basic.s:222: Error: Symbol 'defs' is already defined
+basic.s:222: Error: ':' expected
+basic.s:222: Error: Symbol '.size' is already defined
+basic.s:222: Error: Unexpected trailing garbage characters
+basic.s:226: Error: Symbol 'defs' is already defined
+basic.s:226: Error: ':' expected
+basic.s:226: Error: Symbol '.size' is already defined
+basic.s:226: Error: Unexpected trailing garbage characters
+basic.s:228: Error: Unexpected trailing garbage characters
+basic.s:229: Error: Unexpected trailing garbage characters
+basic.s:230: Error: Unexpected trailing garbage characters
+basic.s:231: Error: Unexpected trailing garbage characters
+basic.s:236: Error: '.DW' is not a recognized control command
+basic.s:236: Error: ':' expected
+basic.s:236: Error: Unexpected trailing garbage characters
+basic.s:237: Error: '.DW' is not a recognized control command
+basic.s:237: Error: ':' expected
+basic.s:237: Error: Unexpected trailing garbage characters
+basic.s:238: Error: '.DW' is not a recognized control command
+basic.s:238: Error: ':' expected
+basic.s:238: Error: Unexpected trailing garbage characters
+basic.s:239: Error: '.DW' is not a recognized control command
+basic.s:239: Error: ':' expected
+basic.s:239: Error: Unexpected trailing garbage characters
+basic.s:240: Error: '.DW' is not a recognized control command
+basic.s:240: Error: ':' expected
+basic.s:240: Error: Unexpected trailing garbage characters
+basic.s:241: Error: '.DW' is not a recognized control command
+basic.s:241: Error: ':' expected
+basic.s:241: Error: Unexpected trailing garbage characters
+basic.s:242: Error: '.DW' is not a recognized control command
+basic.s:242: Error: ':' expected
+basic.s:242: Error: Unexpected trailing garbage characters
+basic.s:243: Error: '.DW' is not a recognized control command
+basic.s:243: Error: ':' expected
+basic.s:243: Error: Unexpected trailing garbage characters
+basic.s:244: Error: Hexadecimal digit expected
+basic.s:245: Error: '.DW' is not a recognized control command
+basic.s:245: Error: ':' expected
+basic.s:245: Error: Unexpected trailing garbage characters
+basic.s:246: Error: '.DW' is not a recognized control command
+basic.s:246: Error: ':' expected
+basic.s:246: Error: Unexpected trailing garbage characters
+basic.s:247: Error: '.DW' is not a recognized control command
+basic.s:247: Error: ':' expected
+basic.s:247: Error: Unexpected trailing garbage characters
+basic.s:248: Error: '.DW' is not a recognized control command
+basic.s:248: Error: ':' expected
+basic.s:248: Error: Unexpected trailing garbage characters
+basic.s:249: Error: Hexadecimal digit expected
+basic.s:250: Error: '.DW' is not a recognized control command
+basic.s:250: Error: ':' expected
+basic.s:250: Error: Unexpected trailing garbage characters
+basic.s:251: Error: '.DW' is not a recognized control command
+basic.s:251: Error: ':' expected
+basic.s:251: Error: Unexpected trailing garbage characters
+basic.s:252: Error: Hexadecimal digit expected
+basic.s:253: Error: '.DW' is not a recognized control command
+basic.s:253: Error: ':' expected
+basic.s:253: Error: Unexpected trailing garbage characters
+basic.s:254: Error: '.DW' is not a recognized control command
+basic.s:254: Error: ':' expected
+basic.s:254: Error: Unexpected trailing garbage characters
+basic.s:255: Error: '.DW' is not a recognized control command
+basic.s:255: Error: ':' expected
+basic.s:255: Error: Unexpected trailing garbage characters
+basic.s:256: Error: '.DW' is not a recognized control command
+basic.s:256: Error: ':' expected
+basic.s:256: Error: Unexpected trailing garbage characters
+basic.s:257: Error: '.DW' is not a recognized control command
+basic.s:257: Error: ':' expected
+basic.s:257: Error: Unexpected trailing garbage characters
+basic.s:258: Error: '.DW' is not a recognized control command
+basic.s:258: Error: ':' expected
+basic.s:258: Error: Unexpected trailing garbage characters
+basic.s:259: Error: '.DW' is not a recognized control command
+basic.s:259: Error: ':' expected
+basic.s:259: Error: Unexpected trailing garbage characters
+basic.s:260: Error: '.DW' is not a recognized control command
+basic.s:260: Error: ':' expected
+basic.s:260: Error: Unexpected trailing garbage characters
+basic.s:261: Error: '.DW' is not a recognized control command
+basic.s:261: Error: ':' expected
+basic.s:261: Error: Unexpected trailing garbage characters
+basic.s:262: Error: Hexadecimal digit expected
+basic.s:263: Error: '.DW' is not a recognized control command
+basic.s:263: Error: ':' expected
+basic.s:263: Error: Unexpected trailing garbage characters
+basic.s:264: Error: '.DW' is not a recognized control command
+basic.s:264: Error: ':' expected
+basic.s:264: Error: Unexpected trailing garbage characters
+basic.s:265: Error: '.DW' is not a recognized control command
+basic.s:265: Error: ':' expected
+basic.s:265: Error: Unexpected trailing garbage characters
+basic.s:266: Error: '.DW' is not a recognized control command
+basic.s:266: Error: ':' expected
+basic.s:266: Error: Unexpected trailing garbage characters
+basic.s:267: Error: '.DW' is not a recognized control command
+basic.s:267: Error: ':' expected
+basic.s:267: Error: Unexpected trailing garbage characters
+basic.s:268: Error: Hexadecimal digit expected
+basic.s:269: Error: Hexadecimal digit expected
+basic.s:270: Error: Hexadecimal digit expected
+basic.s:271: Error: Hexadecimal digit expected
+basic.s:272: Error: Hexadecimal digit expected
+basic.s:273: Error: Hexadecimal digit expected
+basic.s:274: Error: Hexadecimal digit expected
+basic.s:275: Error: Hexadecimal digit expected
+basic.s:276: Error: Hexadecimal digit expected
+basic.s:277: Error: Hexadecimal digit expected
+basic.s:278: Error: Hexadecimal digit expected
+basic.s:279: Error: Hexadecimal digit expected
+basic.s:282: Error: Hexadecimal digit expected
+basic.s:283: Error: '.DW' is not a recognized control command
+basic.s:283: Error: ':' expected
+basic.s:284: Error: '.DW' is not a recognized control command
+basic.s:284: Error: ':' expected
+basic.s:285: Error: '.DW' is not a recognized control command
+basic.s:285: Error: ':' expected
+basic.s:286: Error: '.DW' is not a recognized control command
+basic.s:286: Error: Symbol 'USR' is already defined
+basic.s:286: Error: ':' expected
+basic.s:287: Error: '.DW' is not a recognized control command
+basic.s:287: Error: ':' expected
+basic.s:288: Error: '.DW' is not a recognized control command
+basic.s:288: Error: ':' expected
+basic.s:289: Error: '.DW' is not a recognized control command
+basic.s:289: Error: ':' expected
+basic.s:290: Error: '.DW' is not a recognized control command
+basic.s:290: Error: ':' expected
+basic.s:291: Error: '.DW' is not a recognized control command
+basic.s:291: Error: ':' expected
+basic.s:292: Error: '.DW' is not a recognized control command
+basic.s:292: Error: ':' expected
+basic.s:293: Error: '.DW' is not a recognized control command
+basic.s:293: Error: ':' expected
+basic.s:294: Error: '.DW' is not a recognized control command
+basic.s:294: Error: ':' expected
+basic.s:295: Error: '.DW' is not a recognized control command
+basic.s:295: Error: ':' expected
+basic.s:296: Error: '.DW' is not a recognized control command
+basic.s:296: Error: ':' expected
+basic.s:297: Error: '.DW' is not a recognized control command
+basic.s:297: Error: ':' expected
+basic.s:298: Error: '.DW' is not a recognized control command
+basic.s:298: Error: ':' expected
+basic.s:299: Error: '.DW' is not a recognized control command
+basic.s:299: Error: ':' expected
+basic.s:300: Error: '.DW' is not a recognized control command
+basic.s:300: Error: ':' expected
+basic.s:301: Error: '.DW' is not a recognized control command
+basic.s:301: Error: ':' expected
+basic.s:302: Error: '.DW' is not a recognized control command
+basic.s:302: Error: ':' expected
+basic.s:303: Error: Hexadecimal digit expected
+basic.s:304: Error: '.DW' is not a recognized control command
+basic.s:304: Error: ':' expected
+basic.s:305: Error: '.DW' is not a recognized control command
+basic.s:305: Error: ':' expected
+basic.s:306: Error: '.DW' is not a recognized control command
+basic.s:306: Error: ':' expected
+basic.s:309: Error: '.DB' is not a recognized control command
+basic.s:309: Error: Unexpected trailing garbage characters
+basic.s:310: Error: '.DW' is not a recognized control command
+basic.s:310: Error: ':' expected
+basic.s:310: Error: Unexpected trailing garbage characters
+basic.s:311: Error: '.DB' is not a recognized control command
+basic.s:311: Error: Unexpected trailing garbage characters
+basic.s:312: Error: '.DW' is not a recognized control command
+basic.s:312: Error: ':' expected
+basic.s:312: Error: Unexpected trailing garbage characters
+basic.s:313: Error: '.DB' is not a recognized control command
+basic.s:313: Error: Unexpected trailing garbage characters
+basic.s:314: Error: '.DW' is not a recognized control command
+basic.s:314: Error: ':' expected
+basic.s:314: Error: Unexpected trailing garbage characters
+basic.s:315: Error: '.DB' is not a recognized control command
+basic.s:315: Error: Unexpected trailing garbage characters
+basic.s:316: Error: '.DW' is not a recognized control command
+basic.s:316: Error: ':' expected
+basic.s:316: Error: Unexpected trailing garbage characters
+basic.s:317: Error: '.DB' is not a recognized control command
+basic.s:317: Error: Unexpected trailing garbage characters
+basic.s:318: Error: '.DW' is not a recognized control command
+basic.s:318: Error: ':' expected
+basic.s:318: Error: Unexpected trailing garbage characters
+basic.s:319: Error: '.DB' is not a recognized control command
+basic.s:319: Error: Unexpected trailing garbage characters
+basic.s:320: Error: '.DW' is not a recognized control command
+basic.s:320: Error: ':' expected
+basic.s:320: Error: Unexpected trailing garbage characters
+basic.s:321: Error: '.DB' is not a recognized control command
+basic.s:321: Error: Unexpected trailing garbage characters
+basic.s:322: Error: '.DW' is not a recognized control command
+basic.s:322: Error: ':' expected
+basic.s:322: Error: Unexpected trailing garbage characters
+basic.s:323: Error: '.DB' is not a recognized control command
+basic.s:323: Error: Unexpected trailing garbage characters
+basic.s:324: Error: '.DW' is not a recognized control command
+basic.s:324: Error: ':' expected
+basic.s:324: Error: Unexpected trailing garbage characters
+basic.s:325: Error: '.DB' is not a recognized control command
+basic.s:325: Error: Unexpected trailing garbage characters
+basic.s:326: Error: '.DW' is not a recognized control command
+basic.s:326: Error: ':' expected
+basic.s:326: Error: Unexpected trailing garbage characters
+basic.s:327: Error: '.DB' is not a recognized control command
+basic.s:327: Error: Unexpected trailing garbage characters
+basic.s:328: Error: '.DW' is not a recognized control command
+basic.s:328: Error: ':' expected
+basic.s:328: Error: Unexpected trailing garbage characters
+basic.s:331: Error: '.DB' is not a recognized control command
+basic.s:331: Error: Unexpected trailing garbage characters
+basic.s:332: Error: '.DB' is not a recognized control command
+basic.s:332: Error: Unexpected trailing garbage characters
+basic.s:333: Error: '.DB' is not a recognized control command
+basic.s:333: Error: Unexpected trailing garbage characters
+basic.s:334: Error: '.DB' is not a recognized control command
+basic.s:334: Error: Unexpected trailing garbage characters
+basic.s:335: Error: '.DB' is not a recognized control command
+basic.s:335: Error: Unexpected trailing garbage characters
+basic.s:336: Error: '.DB' is not a recognized control command
+basic.s:336: Error: Unexpected trailing garbage characters
+basic.s:337: Error: '.DB' is not a recognized control command
+basic.s:337: Error: Unexpected trailing garbage characters
+basic.s:338: Error: '.DB' is not a recognized control command
+basic.s:338: Error: Unexpected trailing garbage characters
+basic.s:339: Error: '.DB' is not a recognized control command
+basic.s:339: Error: Unexpected trailing garbage characters
+basic.s:340: Error: '.DB' is not a recognized control command
+basic.s:340: Error: Unexpected trailing garbage characters
+basic.s:341: Error: '.DB' is not a recognized control command
+basic.s:341: Error: Unexpected trailing garbage characters
+basic.s:342: Error: '.DB' is not a recognized control command
+basic.s:342: Error: Unexpected trailing garbage characters
+basic.s:343: Error: '.DB' is not a recognized control command
+basic.s:343: Error: Unexpected trailing garbage characters
+basic.s:344: Error: '.DB' is not a recognized control command
+basic.s:344: Error: Unexpected trailing garbage characters
+basic.s:345: Error: '.DB' is not a recognized control command
+basic.s:345: Error: Unexpected trailing garbage characters
+basic.s:346: Error: '.DB' is not a recognized control command
+basic.s:346: Error: Unexpected trailing garbage characters
+basic.s:347: Error: '.DB' is not a recognized control command
+basic.s:347: Error: Unexpected trailing garbage characters
+basic.s:348: Error: '.DB' is not a recognized control command
+basic.s:348: Error: Unexpected trailing garbage characters
+basic.s:349: Error: '.DB' is not a recognized control command
+basic.s:349: Error: Unexpected trailing garbage characters
+basic.s:350: Error: '.DB' is not a recognized control command
+basic.s:350: Error: Unexpected trailing garbage characters
+basic.s:351: Error: '.DB' is not a recognized control command
+basic.s:351: Error: Unexpected trailing garbage characters
+basic.s:352: Error: '.DB' is not a recognized control command
+basic.s:352: Error: Unexpected trailing garbage characters
+basic.s:353: Error: '.DB' is not a recognized control command
+basic.s:353: Error: Unexpected trailing garbage characters
+basic.s:354: Error: '.DB' is not a recognized control command
+basic.s:354: Error: Unexpected trailing garbage characters
+basic.s:355: Error: '.DB' is not a recognized control command
+basic.s:355: Error: Unexpected trailing garbage characters
+basic.s:356: Error: '.DB' is not a recognized control command
+basic.s:356: Error: Unexpected trailing garbage characters
+basic.s:357: Error: '.DB' is not a recognized control command
+basic.s:357: Error: Unexpected trailing garbage characters
+basic.s:358: Error: '.DB' is not a recognized control command
+basic.s:358: Error: Unexpected trailing garbage characters
+basic.s:359: Error: '.DB' is not a recognized control command
+basic.s:359: Error: Unexpected trailing garbage characters
+basic.s:360: Error: '.DB' is not a recognized control command
+basic.s:360: Error: Unexpected trailing garbage characters
+basic.s:361: Error: '.DB' is not a recognized control command
+basic.s:361: Error: Unexpected trailing garbage characters
+basic.s:362: Error: '.DB' is not a recognized control command
+basic.s:362: Error: Unexpected trailing garbage characters
+basic.s:363: Error: '.DB' is not a recognized control command
+basic.s:363: Error: Unexpected trailing garbage characters
+basic.s:364: Error: '.DB' is not a recognized control command
+basic.s:364: Error: Unexpected trailing garbage characters
+basic.s:365: Error: '.DB' is not a recognized control command
+basic.s:365: Error: Unexpected trailing garbage characters
+basic.s:366: Error: '.DB' is not a recognized control command
+basic.s:366: Error: Unexpected trailing garbage characters
+basic.s:367: Error: '.DB' is not a recognized control command
+basic.s:367: Error: Unexpected trailing garbage characters
+basic.s:368: Error: '.DB' is not a recognized control command
+basic.s:368: Error: Unexpected trailing garbage characters
+basic.s:369: Error: '.DB' is not a recognized control command
+basic.s:369: Error: Unexpected trailing garbage characters
+basic.s:370: Error: '.DB' is not a recognized control command
+basic.s:370: Error: Unexpected trailing garbage characters
+basic.s:371: Error: '.DB' is not a recognized control command
+basic.s:371: Error: Unexpected trailing garbage characters
+basic.s:372: Error: '.DB' is not a recognized control command
+basic.s:372: Error: Unexpected trailing garbage characters
+basic.s:373: Error: '.DB' is not a recognized control command
+basic.s:373: Error: Unexpected trailing garbage characters
+basic.s:374: Error: '.DB' is not a recognized control command
+basic.s:374: Error: Unexpected trailing garbage characters
+basic.s:375: Error: '.DB' is not a recognized control command
+basic.s:375: Error: Unexpected trailing garbage characters
+basic.s:376: Error: '.DB' is not a recognized control command
+basic.s:376: Error: Unexpected trailing garbage characters
+basic.s:377: Error: '.DB' is not a recognized control command
+basic.s:377: Error: Unexpected trailing garbage characters
+basic.s:378: Error: '.DB' is not a recognized control command
+basic.s:378: Error: Unexpected trailing garbage characters
+basic.s:379: Error: '.DB' is not a recognized control command
+basic.s:379: Error: Unexpected trailing garbage characters
+basic.s:380: Error: '.DB' is not a recognized control command
+basic.s:380: Error: Unexpected trailing garbage characters
+basic.s:381: Error: '.DB' is not a recognized control command
+basic.s:381: Error: Unexpected trailing garbage characters
+basic.s:382: Error: '.DB' is not a recognized control command
+basic.s:382: Error: Unexpected trailing garbage characters
+basic.s:383: Error: '.DB' is not a recognized control command
+basic.s:383: Error: Unexpected trailing garbage characters
+basic.s:384: Error: '.DB' is not a recognized control command
+basic.s:384: Error: Unexpected trailing garbage characters
+basic.s:385: Error: '.DB' is not a recognized control command
+basic.s:385: Error: Unexpected trailing garbage characters
+basic.s:386: Error: '.DB' is not a recognized control command
+basic.s:386: Error: Unexpected trailing garbage characters
+basic.s:387: Error: '.DB' is not a recognized control command
+basic.s:387: Error: Unexpected trailing garbage characters
+basic.s:388: Error: '.DB' is not a recognized control command
+basic.s:388: Error: Unexpected trailing garbage characters
+basic.s:389: Error: '.DB' is not a recognized control command
+basic.s:389: Error: Unexpected trailing garbage characters
+basic.s:390: Error: '.DB' is not a recognized control command
+basic.s:390: Error: Unexpected trailing garbage characters
+basic.s:391: Error: '.DB' is not a recognized control command
+basic.s:391: Error: Unexpected trailing garbage characters
+basic.s:392: Error: '.DB' is not a recognized control command
+basic.s:392: Error: Unexpected trailing garbage characters
+basic.s:393: Error: '.DB' is not a recognized control command
+basic.s:393: Error: Unexpected trailing garbage characters
+basic.s:394: Error: '.DB' is not a recognized control command
+basic.s:394: Error: Unexpected trailing garbage characters
+basic.s:395: Error: '.DB' is not a recognized control command
+basic.s:395: Error: Unexpected trailing garbage characters
+basic.s:396: Error: '.DB' is not a recognized control command
+basic.s:396: Error: Unexpected trailing garbage characters
+basic.s:397: Error: '.DB' is not a recognized control command
+basic.s:397: Error: Unexpected trailing garbage characters
+basic.s:398: Error: '.DB' is not a recognized control command
+basic.s:398: Error: Unexpected trailing garbage characters
+basic.s:399: Error: '.DB' is not a recognized control command
+basic.s:399: Error: Unexpected trailing garbage characters
+basic.s:402: Error: Hexadecimal digit expected
+basic.s:402: Error: Unexpected trailing garbage characters
+basic.s:403: Error: '.DB' is not a recognized control command
+basic.s:403: Error: Unexpected trailing garbage characters
+basic.s:404: Error: Hexadecimal digit expected
+basic.s:404: Error: Unexpected trailing garbage characters
+basic.s:405: Error: '.DB' is not a recognized control command
+basic.s:405: Error: Unexpected trailing garbage characters
+basic.s:406: Error: Hexadecimal digit expected
+basic.s:406: Error: Unexpected trailing garbage characters
+basic.s:407: Error: '.DB' is not a recognized control command
+basic.s:407: Error: Unexpected trailing garbage characters
+basic.s:408: Error: Hexadecimal digit expected
+basic.s:408: Error: Unexpected trailing garbage characters
+basic.s:409: Error: '.DB' is not a recognized control command
+basic.s:409: Error: Unexpected trailing garbage characters
+basic.s:410: Error: Hexadecimal digit expected
+basic.s:410: Error: Unexpected trailing garbage characters
+basic.s:411: Error: '.DB' is not a recognized control command
+basic.s:411: Error: Unexpected trailing garbage characters
+basic.s:412: Error: Hexadecimal digit expected
+basic.s:412: Error: Unexpected trailing garbage characters
+basic.s:413: Error: '.DB' is not a recognized control command
+basic.s:413: Error: Unexpected trailing garbage characters
+basic.s:414: Error: Hexadecimal digit expected
+basic.s:414: Error: Unexpected trailing garbage characters
+basic.s:415: Error: '.DB' is not a recognized control command
+basic.s:415: Error: Unexpected trailing garbage characters
+basic.s:416: Error: Hexadecimal digit expected
+basic.s:416: Error: Unexpected trailing garbage characters
+basic.s:417: Error: '.DB' is not a recognized control command
+basic.s:417: Error: Unexpected trailing garbage characters
+basic.s:418: Error: Hexadecimal digit expected
+basic.s:418: Error: Unexpected trailing garbage characters
+basic.s:419: Error: '.DB' is not a recognized control command
+basic.s:419: Error: Unexpected trailing garbage characters
+basic.s:420: Error: Hexadecimal digit expected
+basic.s:420: Error: Unexpected trailing garbage characters
+basic.s:421: Error: '.DB' is not a recognized control command
+basic.s:421: Error: Unexpected trailing garbage characters
+basic.s:422: Error: Hexadecimal digit expected
+basic.s:422: Error: Unexpected trailing garbage characters
+basic.s:423: Error: '.DB' is not a recognized control command
+basic.s:423: Error: Unexpected trailing garbage characters
+basic.s:424: Error: Hexadecimal digit expected
+basic.s:424: Error: Unexpected trailing garbage characters
+basic.s:425: Error: '.DB' is not a recognized control command
+basic.s:425: Error: Unexpected trailing garbage characters
+basic.s:426: Error: Hexadecimal digit expected
+basic.s:426: Error: Unexpected trailing garbage characters
+basic.s:427: Error: '.DB' is not a recognized control command
+basic.s:427: Error: Unexpected trailing garbage characters
+basic.s:428: Error: Hexadecimal digit expected
+basic.s:428: Error: Unexpected trailing garbage characters
+basic.s:429: Error: '.DB' is not a recognized control command
+basic.s:429: Error: Unexpected trailing garbage characters
+basic.s:430: Error: Hexadecimal digit expected
+basic.s:430: Error: Unexpected trailing garbage characters
+basic.s:431: Error: '.DB' is not a recognized control command
+basic.s:431: Error: Unexpected trailing garbage characters
+basic.s:432: Error: Hexadecimal digit expected
+basic.s:432: Error: Unexpected trailing garbage characters
+basic.s:433: Error: '.DB' is not a recognized control command
+basic.s:433: Error: Unexpected trailing garbage characters
+basic.s:434: Error: Hexadecimal digit expected
+basic.s:434: Error: Unexpected trailing garbage characters
+basic.s:435: Error: '.DB' is not a recognized control command
+basic.s:435: Error: Unexpected trailing garbage characters
+basic.s:439: Error: '.DB' is not a recognized control command
+basic.s:439: Error: Unexpected trailing garbage characters
+basic.s:440: Error: '.DB' is not a recognized control command
+basic.s:440: Error: Unexpected trailing garbage characters
+basic.s:442: Error: '.DB' is not a recognized control command
+basic.s:442: Error: Unexpected trailing garbage characters
+basic.s:443: Error: '.DB' is not a recognized control command
+basic.s:443: Error: Unexpected trailing garbage characters
+basic.s:445: Error: '.DB' is not a recognized control command
+basic.s:445: Error: Symbol 'CR' is already defined
+basic.s:445: Error: ':' expected
+basic.s:445: Error: Unexpected trailing garbage characters
+basic.s:446: Error: '.DB' is not a recognized control command
+basic.s:446: Error: Unexpected trailing garbage characters
+basic.s:448: Error: '.DB' is not a recognized control command
+basic.s:448: Error: Symbol 'CR' is already defined
+basic.s:448: Error: ':' expected
+basic.s:448: Error: Symbol '.size' is already defined
+basic.s:448: Error: Unexpected trailing garbage characters
+basic.s:449: Error: '.DB' is not a recognized control command
+basic.s:449: Error: Unexpected trailing garbage characters
+basic.s:575: Error: Range error (-1 not in [0..255])
+basic.s:729: Error: Range error (-4 not in [0..65535])
+basic.s:748: Error: Hexadecimal digit expected
+basic.s:801: Error: '.DB' is not a recognized control command
+basic.s:801: Error: Unexpected trailing garbage characters
+basic.s:853: Error: Range error (-28544 not in [0..255])
+basic.s:893: Error: Range error (-5 not in [0..65535])
+basic.s:894: Error: Range error (-5 not in [0..65535])
+basic.s:905: Error: Range error (-28602 not in [0..255])
+basic.s:919: Error: Range error (-5 not in [0..65535])
+basic.s:938: Error: Range error (-3 not in [0..65535])
+basic.s:939: Error: Range error (-1 not in [0..255])
+basic.s:988: Error: Symbol 'NEW' is already defined
+basic.s:988: Error: Symbol '.size' is already defined
+basic.s:1051: Error: Symbol 'LIST' is already defined
+basic.s:1051: Error: Symbol '.size' is already defined
+basic.s:1054: Error: Range error (-28536 not in [0..255])
+basic.s:1061: Error: Range error (-28536 not in [0..255])
+basic.s:1159: Error: Symbol 'FOR' is already defined
+basic.s:1159: Error: Symbol '.size' is already defined
+basic.s:1186: Error: Range error (-28543 not in [0..255])
+basic.s:1207: Error: Range error (-28538 not in [0..255])
+basic.s:1270: Error: Hexadecimal digit expected
+basic.s:1274: Error: Range error (-28672 not in [0..255])
+basic.s:1286: Error: Symbol 'RESTORE' is already defined
+basic.s:1286: Error: Symbol '.size' is already defined
+basic.s:1308: Error: Symbol 'STOP' is already defined
+basic.s:1308: Error: Symbol '.size' is already defined
+basic.s:1313: Error: Symbol 'END' is already defined
+basic.s:1313: Error: Symbol '.size' is already defined
+basic.s:1342: Error: Symbol 'CONT' is already defined
+basic.s:1342: Error: Symbol '.size' is already defined
+basic.s:1358: Error: Symbol 'NULL' is already defined
+basic.s:1358: Error: Symbol '.size' is already defined
+basic.s:1369: Error: Symbol 'CLEAR' is already defined
+basic.s:1369: Error: Symbol '.size' is already defined
+basic.s:1375: Error: Symbol 'RUN' is already defined
+basic.s:1375: Error: Symbol '.size' is already defined
+basic.s:1390: Error: Symbol 'GOSUB' is already defined
+basic.s:1390: Error: Symbol '.size' is already defined
+basic.s:1401: Error: Range error (-28544 not in [0..255])
+basic.s:1411: Error: Symbol 'GOTO' is already defined
+basic.s:1411: Error: Symbol '.size' is already defined
+basic.s:1441: Error: Symbol 'POP' is already defined
+basic.s:1441: Error: Symbol '.size' is already defined
+basic.s:1447: Error: Range error (-28544 not in [0..255])
+basic.s:1450: Error: '.DB' is not a recognized control command
+basic.s:1450: Error: Unexpected trailing garbage characters
+basic.s:1472: Error: Symbol 'DATA' is already defined
+basic.s:1472: Error: Symbol '.size' is already defined
+basic.s:1491: Error: '.DB' is not a recognized control command
+basic.s:1491: Error: Unexpected trailing garbage characters
+basic.s:1514: Error: Symbol 'IF' is already defined
+basic.s:1514: Error: Symbol '.size' is already defined
+basic.s:1517: Error: Range error (-28544 not in [0..255])
+basic.s:1519: Error: Range error (-28540 not in [0..255])
+basic.s:1527: Error: Symbol 'REM' is already defined
+basic.s:1527: Error: Symbol '.size' is already defined
+basic.s:1542: Error: Symbol 'ON' is already defined
+basic.s:1542: Error: Symbol '.size' is already defined
+basic.s:1545: Error: Range error (-28544 not in [0..255])
+basic.s:1548: Error: Range error (-28544 not in [0..255])
+basic.s:1616: Error: Symbol 'LET' is already defined
+basic.s:1616: Error: Symbol '.size' is already defined
+basic.s:1620: Error: Range error (-28529 not in [0..255])
+basic.s:1690: Error: Symbol 'PRINT' is already defined
+basic.s:1690: Error: Symbol '.size' is already defined
+basic.s:1694: Error: Range error (-28544 not in [0..255])
+basic.s:1696: Error: Range error (-28541 not in [0..255])
+basic.s:1720: Error: Unexpected trailing garbage characters
+basic.s:1764: Error: Range error (-28544 not in [0..255])
+basic.s:1805: Error: '.DB' is not a recognized control command
+basic.s:1805: Error: Unexpected trailing garbage characters
+basic.s:1873: Error: Symbol 'INPUT' is already defined
+basic.s:1873: Error: Symbol '.size' is already defined
+basic.s:1884: Error: Range error (-1 not in [0..255])
+basic.s:1900: Error: Symbol 'READ' is already defined
+basic.s:1900: Error: Symbol '.size' is already defined
+basic.s:1904: Error: '.DB' is not a recognized control command
+basic.s:1904: Error: Unexpected trailing garbage characters
+basic.s:2041: Error: '.DB' is not a recognized control command
+basic.s:2041: Error: Unexpected trailing garbage characters
+basic.s:2044: Error: '.DB' is not a recognized control command
+basic.s:2044: Error: Unexpected trailing garbage characters
+basic.s:2046: Error: '.DB' is not a recognized control command
+basic.s:2046: Error: Unexpected trailing garbage characters
+basic.s:2049: Error: '.DB' is not a recognized control command
+basic.s:2049: Error: Unexpected trailing garbage characters
+basic.s:2053: Error: Symbol 'NEXT' is already defined
+basic.s:2053: Error: Symbol '.size' is already defined
+basic.s:2125: Error: '.DB' is not a recognized control command
+basic.s:2125: Error: Unexpected trailing garbage characters
+basic.s:2160: Error: '.DB' is not a recognized control command
+basic.s:2160: Error: Unexpected trailing garbage characters
+basic.s:2174: Error: Range error (-28530 not in [0..255])
+basic.s:2346: Error: Range error (-28536 not in [0..255])
+basic.s:2348: Error: Range error (-28537 not in [0..255])
+basic.s:2372: Error: Range error (-28539 not in [0..255])
+basic.s:2380: Error: Symbol 'EQUOP' is already defined
+basic.s:2380: Error: Symbol '.size' is already defined
+basic.s:2389: Error: Range error (-28542 not in [0..255])
+basic.s:2393: Error: Range error (-28527 not in [0..255])
+basic.s:2404: Error: '.DB' is not a recognized control command
+basic.s:2404: Error: Unexpected trailing garbage characters
+basic.s:2407: Error: '.DB' is not a recognized control command
+basic.s:2407: Error: Unexpected trailing garbage characters
+basic.s:2432: Error: Hexadecimal digit expected
+basic.s:2473: Error: Range error (114654 not in [0..65535])
+basic.s:2475: Error: Range error (114655 not in [0..65535])
+basic.s:2480: Error: Symbol 'OR' is already defined
+basic.s:2480: Error: Symbol '.size' is already defined
+basic.s:2482: Error: '.DB' is not a recognized control command
+basic.s:2482: Error: Unexpected trailing garbage characters
+basic.s:2484: Error: Symbol 'TAND' is already defined
+basic.s:2484: Error: Symbol '.size' is already defined
+basic.s:2509: Error: Symbol 'RELOPS' is already defined
+basic.s:2509: Error: Symbol '.size' is already defined
+basic.s:2579: Error: Symbol 'DIM' is already defined
+basic.s:2579: Error: Symbol '.size' is already defined
+basic.s:2698: Error: '.DB' is not a recognized control command
+basic.s:2698: Error: Unexpected trailing garbage characters
+basic.s:2774: Error: '.DB' is not a recognized control command
+basic.s:2774: Error: Unexpected trailing garbage characters
+basic.s:2883: Error: '.DB' is not a recognized control command
+basic.s:2883: Error: Unexpected trailing garbage characters
+basic.s:3097: Error: Symbol 'FRE' is already defined
+basic.s:3097: Error: Symbol '.size' is already defined
+basic.s:3121: Error: Symbol 'POS' is already defined
+basic.s:3121: Error: Symbol '.size' is already defined
+basic.s:3140: Error: Symbol 'DEF' is already defined
+basic.s:3140: Error: Symbol '.size' is already defined
+basic.s:3149: Error: Range error (-28529 not in [0..255])
+basic.s:3162: Error: Range error (-28542 not in [0..255])
+basic.s:3241: Error: Symbol 'STR' is already defined
+basic.s:3241: Error: Symbol '.size' is already defined
+basic.s:3709: Error: Symbol 'CHRSTR' is already defined
+basic.s:3709: Error: Symbol '.size' is already defined
+basic.s:3724: Error: Symbol 'LEFTSTR' is already defined
+basic.s:3724: Error: Symbol '.size' is already defined
+basic.s:3758: Error: Symbol 'RIGHTSTR' is already defined
+basic.s:3758: Error: Symbol '.size' is already defined
+basic.s:3767: Error: Symbol 'MIDSTR' is already defined
+basic.s:3767: Error: Symbol '.size' is already defined
+basic.s:3816: Error: Symbol 'LEN' is already defined
+basic.s:3816: Error: Symbol '.size' is already defined
+basic.s:3833: Error: Symbol 'ASC' is already defined
+basic.s:3833: Error: Symbol '.size' is already defined
+basic.s:3867: Error: Symbol 'VAL' is already defined
+basic.s:3867: Error: Symbol '.size' is already defined
+basic.s:3940: Error: Symbol 'PEEK' is already defined
+basic.s:3940: Error: Symbol '.size' is already defined
+basic.s:3950: Error: Symbol 'POKE' is already defined
+basic.s:3950: Error: Symbol '.size' is already defined
+basic.s:3959: Error: Symbol 'WAIT' is already defined
+basic.s:3959: Error: Symbol '.size' is already defined
+basic.s:3992: Error: Symbol 'FSUBT' is already defined
+basic.s:3992: Error: Symbol '.size' is already defined
+basic.s:4017: Error: Symbol 'FADDT' is already defined
+basic.s:4017: Error: Symbol '.size' is already defined
+basic.s:4204: Error: Unexpected trailing garbage characters
+basic.s:4206: Error: Unexpected trailing garbage characters
+basic.s:4208: Error: Unexpected trailing garbage characters
+basic.s:4241: Error: '.DB' is not a recognized control command
+basic.s:4241: Error: Unexpected trailing garbage characters
+basic.s:4243: Error: '.DB' is not a recognized control command
+basic.s:4243: Error: Unexpected trailing garbage characters
+basic.s:4244: Error: '.DB' is not a recognized control command
+basic.s:4244: Error: Unexpected trailing garbage characters
+basic.s:4245: Error: '.DB' is not a recognized control command
+basic.s:4245: Error: Unexpected trailing garbage characters
+basic.s:4246: Error: '.DB' is not a recognized control command
+basic.s:4246: Error: Unexpected trailing garbage characters
+basic.s:4248: Error: '.DB' is not a recognized control command
+basic.s:4248: Error: Unexpected trailing garbage characters
+basic.s:4250: Error: '.DB' is not a recognized control command
+basic.s:4250: Error: Unexpected trailing garbage characters
+basic.s:4252: Error: '.DB' is not a recognized control command
+basic.s:4252: Error: Unexpected trailing garbage characters
+basic.s:4254: Error: '.DB' is not a recognized control command
+basic.s:4254: Error: Unexpected trailing garbage characters
+basic.s:4258: Error: Symbol 'LOG' is already defined
+basic.s:4258: Error: Symbol '.size' is already defined
+basic.s:4297: Error: Symbol 'FMULTT' is already defined
+basic.s:4297: Error: Symbol '.size' is already defined
+basic.s:4386: Error: '.DB' is not a recognized control command
+basic.s:4386: Error: Unexpected trailing garbage characters
+basic.s:4434: Error: '.DB' is not a recognized control command
+basic.s:4434: Error: Unexpected trailing garbage characters
+basic.s:4458: Error: Symbol 'FDIVT' is already defined
+basic.s:4458: Error: Symbol '.size' is already defined
+basic.s:4468: Error: Range error (-3 not in [0..255])
+basic.s:4565: Error: '.DB' is not a recognized control command
+basic.s:4565: Error: Unexpected trailing garbage characters
+basic.s:4669: Error: Symbol 'SGN' is already defined
+basic.s:4669: Error: Symbol '.size' is already defined
+basic.s:4703: Error: Symbol 'ABS' is already defined
+basic.s:4703: Error: Symbol '.size' is already defined
+basic.s:4793: Error: Symbol 'INT' is already defined
+basic.s:4793: Error: Symbol '.size' is already defined
+basic.s:4826: Error: Unexpected trailing garbage characters
+basic.s:4848: Error: Range error (-28536 not in [0..255])
+basic.s:4852: Error: Range error (-28537 not in [0..255])
+basic.s:4959: Error: '.DB' is not a recognized control command
+basic.s:4959: Error: Unexpected trailing garbage characters
+basic.s:4961: Error: '.DB' is not a recognized control command
+basic.s:4961: Error: Unexpected trailing garbage characters
+basic.s:4963: Error: '.DB' is not a recognized control command
+basic.s:4963: Error: Unexpected trailing garbage characters
+basic.s:5002: Error: Unexpected trailing garbage characters
+basic.s:5019: Error: Range error (-6 not in [0..255])
+basic.s:5079: Error: Unexpected trailing garbage characters
+basic.s:5084: Error: Unexpected trailing garbage characters
+basic.s:5125: Error: Unexpected trailing garbage characters
+basic.s:5130: Error: Unexpected trailing garbage characters
+basic.s:5147: Error: Unexpected trailing garbage characters
+basic.s:5183: Error: Unexpected trailing garbage characters
+basic.s:5193: Error: '.DB' is not a recognized control command
+basic.s:5193: Error: Unexpected trailing garbage characters
+basic.s:5199: Error: '.DB' is not a recognized control command
+basic.s:5199: Error: Unexpected trailing garbage characters
+basic.s:5200: Error: '.DB' is not a recognized control command
+basic.s:5200: Error: Unexpected trailing garbage characters
+basic.s:5201: Error: '.DB' is not a recognized control command
+basic.s:5201: Error: Unexpected trailing garbage characters
+basic.s:5202: Error: '.DB' is not a recognized control command
+basic.s:5202: Error: Unexpected trailing garbage characters
+basic.s:5203: Error: '.DB' is not a recognized control command
+basic.s:5203: Error: Unexpected trailing garbage characters
+basic.s:5204: Error: '.DB' is not a recognized control command
+basic.s:5204: Error: Unexpected trailing garbage characters
+basic.s:5209: Error: Symbol 'SQR' is already defined
+basic.s:5209: Error: Symbol '.size' is already defined
+basic.s:5219: Error: Symbol 'FPWRT' is already defined
+basic.s:5219: Error: Symbol '.size' is already defined
+basic.s:5252: Error: Symbol 'NEGOP' is already defined
+basic.s:5252: Error: Symbol '.size' is already defined
+basic.s:5262: Error: '.DB' is not a recognized control command
+basic.s:5262: Error: Unexpected trailing garbage characters
+basic.s:5264: Error: '.DB' is not a recognized control command
+basic.s:5264: Error: Unexpected trailing garbage characters
+basic.s:5265: Error: '.DB' is not a recognized control command
+basic.s:5265: Error: Unexpected trailing garbage characters
+basic.s:5266: Error: '.DB' is not a recognized control command
+basic.s:5266: Error: Unexpected trailing garbage characters
+basic.s:5267: Error: '.DB' is not a recognized control command
+basic.s:5267: Error: Unexpected trailing garbage characters
+basic.s:5268: Error: '.DB' is not a recognized control command
+basic.s:5268: Error: Unexpected trailing garbage characters
+basic.s:5269: Error: '.DB' is not a recognized control command
+basic.s:5269: Error: Unexpected trailing garbage characters
+basic.s:5270: Error: '.DB' is not a recognized control command
+basic.s:5270: Error: Unexpected trailing garbage characters
+basic.s:5271: Error: '.DB' is not a recognized control command
+basic.s:5271: Error: Unexpected trailing garbage characters
+basic.s:5277: Error: Symbol 'EXP' is already defined
+basic.s:5277: Error: Symbol '.size' is already defined
+basic.s:5307: Error: Unexpected trailing garbage characters
+basic.s:5391: Error: '.DB' is not a recognized control command
+basic.s:5391: Error: Unexpected trailing garbage characters
+basic.s:5393: Error: '.DB' is not a recognized control command
+basic.s:5393: Error: Unexpected trailing garbage characters
+basic.s:5394: Error: Symbol 'RND' is already defined
+basic.s:5394: Error: Symbol '.size' is already defined
+basic.s:5428: Error: Symbol 'COS' is already defined
+basic.s:5428: Error: Symbol '.size' is already defined
+basic.s:5435: Error: Symbol 'SIN' is already defined
+basic.s:5435: Error: Symbol '.size' is already defined
+basic.s:5491: Error: Symbol 'TAN' is already defined
+basic.s:5491: Error: Symbol '.size' is already defined
+basic.s:5514: Error: '.DB' is not a recognized control command
+basic.s:5514: Error: Unexpected trailing garbage characters
+basic.s:5516: Error: '.DB' is not a recognized control command
+basic.s:5516: Error: Unexpected trailing garbage characters
+basic.s:5518: Error: '.DB' is not a recognized control command
+basic.s:5518: Error: Unexpected trailing garbage characters
+basic.s:5520: Error: '.DB' is not a recognized control command
+basic.s:5520: Error: Unexpected trailing garbage characters
+basic.s:5521: Error: '.DB' is not a recognized control command
+basic.s:5521: Error: Unexpected trailing garbage characters
+basic.s:5522: Error: '.DB' is not a recognized control command
+basic.s:5522: Error: Unexpected trailing garbage characters
+basic.s:5527: Error: Symbol 'ATN' is already defined
+basic.s:5527: Error: Symbol '.size' is already defined
+basic.s:5562: Error: '.DB' is not a recognized control command
+basic.s:5562: Error: Unexpected trailing garbage characters
+basic.s:5563: Error: '.DB' is not a recognized control command
+basic.s:5563: Error: Unexpected trailing garbage characters
+basic.s:5564: Error: '.DB' is not a recognized control command
+basic.s:5564: Error: Unexpected trailing garbage characters
+basic.s:5565: Error: '.DB' is not a recognized control command
+basic.s:5565: Error: Unexpected trailing garbage characters
+basic.s:5566: Error: '.DB' is not a recognized control command
+basic.s:5566: Error: Unexpected trailing garbage characters
+basic.s:5567: Error: '.DB' is not a recognized control command
+basic.s:5567: Error: Unexpected trailing garbage characters
+basic.s:5568: Error: '.DB' is not a recognized control command
+basic.s:5568: Error: Unexpected trailing garbage characters
+basic.s:5569: Error: '.DB' is not a recognized control command
+basic.s:5569: Error: Unexpected trailing garbage characters
+basic.s:5570: Error: '.DB' is not a recognized control command
+basic.s:5570: Error: Unexpected trailing garbage characters
+basic.s:5571: Error: '.DB' is not a recognized control command
+basic.s:5571: Error: Unexpected trailing garbage characters
+basic.s:5592: Error: '.DB' is not a recognized control command
+basic.s:5592: Error: Unexpected trailing garbage characters
+basic.s:5756: Error: '.DB' is not a recognized control command
+basic.s:5756: Error: Unexpected trailing garbage characters
+basic.s:5757: Error: '.DB' is not a recognized control command
+basic.s:5757: Error: Unexpected trailing garbage characters
+basic.s:5759: Error: '.DB' is not a recognized control command
+basic.s:5759: Error: Symbol 'CR' is already defined
+basic.s:5759: Error: ':' expected
+basic.s:5759: Error: Symbol '.size' is already defined
+basic.s:5759: Error: Unexpected trailing garbage characters
+basic.s:5760: Error: '.DB' is not a recognized control command
+basic.s:5760: Error: Unexpected trailing garbage characters
+basic.s:5761: Error: '.DB' is not a recognized control command
+basic.s:5761: Error: Symbol 'CR' is already defined
+basic.s:5761: Error: ':' expected
+basic.s:5761: Error: Symbol '.size' is already defined
+basic.s:5761: Error: Unexpected trailing garbage characters
+basic.s:5763: Error: '.DB' is not a recognized control command
+basic.s:5763: Error: Unexpected trailing garbage characters
+basic.s:5764: Error: '.DB' is not a recognized control command
+basic.s:5764: Error: Unexpected trailing garbage characters
+basic.s:5766: Error: '.DB' is not a recognized control command
+basic.s:5766: Error: Unexpected trailing garbage characters
+basic.s:5767: Error: '.DB' is not a recognized control command
+basic.s:5767: Error: Unexpected trailing garbage characters
+basic.s:5769: Error: '.DB' is not a recognized control command
+basic.s:5769: Error: Unexpected trailing garbage characters
+basic.s:5770: Error: '.DB' is not a recognized control command
+basic.s:5770: Error: Symbol 'CR' is already defined
+basic.s:5770: Error: ':' expected
+basic.s:5770: Error: Symbol '.size' is already defined
+basic.s:5770: Error: Unexpected trailing garbage characters
+basic.s:5771: Error: '.DB' is not a recognized control command
+basic.s:5771: Error: Unexpected trailing garbage characters
+basic.s:5772: Error: '.DB' is not a recognized control command
+basic.s:5772: Error: Symbol 'CR' is already defined
+basic.s:5772: Error: ':' expected
+basic.s:5772: Error: Symbol '.size' is already defined
+basic.s:5772: Error: Unexpected trailing garbage characters
+basic.s:5773: Error: '.DB' is not a recognized control command
+basic.s:5773: Error: Unexpected trailing garbage characters
+basic.s:5774: Error: '.DB' is not a recognized control command
+basic.s:5774: Error: Symbol 'CR' is already defined
+basic.s:5774: Error: ':' expected
+basic.s:5774: Error: Symbol '.size' is already defined
+basic.s:5774: Error: Unexpected trailing garbage characters
+basic.s:5780: Error: ':' expected
+basic.s:5780: Error: Unexpected trailing garbage characters
+basic.s:5781: Error: ':' expected
+basic.s:5781: Error: Unexpected trailing garbage characters
+basic.s:5782: Error: ':' expected
+basic.s:5782: Error: Unexpected trailing garbage characters
+basic.s:5783: Error: ':' expected
+basic.s:5783: Error: Unexpected trailing garbage characters
+basic.s:5784: Error: ':' expected
+basic.s:5784: Error: Unexpected trailing garbage characters
+basic.s:5785: Error: ':' expected
+basic.s:5785: Error: Unexpected trailing garbage characters
+basic.s:5786: Error: ':' expected
+basic.s:5786: Error: Unexpected trailing garbage characters
+basic.s:5787: Error: ':' expected
+basic.s:5787: Error: Unexpected trailing garbage characters
+basic.s:5789: Error: ':' expected
+basic.s:5789: Error: Unexpected trailing garbage characters
+basic.s:5791: Error: ':' expected
+basic.s:5791: Error: Unexpected trailing garbage characters
+basic.s:5792: Error: ':' expected
+basic.s:5792: Error: Unexpected trailing garbage characters
+basic.s:5793: Error: ':' expected
+basic.s:5793: Error: Unexpected trailing garbage characters
+basic.s:5794: Error: ':' expected
+basic.s:5794: Error: Unexpected trailing garbage characters
+basic.s:5796: Error: ':' expected
+basic.s:5796: Error: Unexpected trailing garbage characters
+basic.s:5796: Error: Invalid digits in number
+basic.s:5797: Error: ':' expected
+basic.s:5797: Error: Unexpected trailing garbage characters
+basic.s:5797: Error: Invalid digits in number
+basic.s:5798: Error: ':' expected
+basic.s:5798: Error: Unexpected trailing garbage characters
+basic.s:5798: Error: Invalid digits in number
+basic.s:5799: Error: ':' expected
+basic.s:5799: Error: Unexpected trailing garbage characters
+basic.s:5799: Error: Invalid digits in number
+basic.s:5802: Error: ':' expected
+basic.s:5802: Error: Unexpected trailing garbage characters
+basic.s:5803: Error: ':' expected
+basic.s:5803: Error: Unexpected trailing garbage characters
+basic.s:5804: Error: ':' expected
+basic.s:5804: Error: Unexpected trailing garbage characters
+basic.s:5805: Error: ':' expected
+basic.s:5805: Error: Unexpected trailing garbage characters
+basic.s:5806: Error: ':' expected
+basic.s:5806: Error: Unexpected trailing garbage characters
+basic.s:5807: Error: ':' expected
+basic.s:5807: Error: Unexpected trailing garbage characters
+basic.s:5823: Error: Range error (64414 not in [0..255])
+basic.s:5825: Error: Range error (64414 not in [0..255])
+basic.s:5827: Error: Range error (64414 not in [0..255])
+basic.s:5869: Error: Range error (64414 not in [0..255])
+basic.s:5870: Error: Range error (64414 not in [0..255])
+basic.s:5891: Error: '.DB' is not a recognized control command
+basic.s:5891: Error: Unexpected trailing garbage characters
+basic.s:5893: Error: Symbol 'LOAD' is already defined
+basic.s:5893: Error: Symbol '.size' is already defined
+basic.s:5896: Error: Symbol 'SAVE' is already defined
+basic.s:5896: Error: Symbol '.size' is already defined
+basic.s:5901: Error: '.DW' is not a recognized control command
+basic.s:5901: Error: Symbol 'Reset' is already defined
+basic.s:5901: Error: ':' expected
+basic.s:5901: Error: Symbol '.size' is already defined
+basic.s:5902: Error: '.DW' is not a recognized control command
+basic.s:5902: Error: Symbol 'Reset' is already defined
+basic.s:5902: Error: ':' expected
+basic.s:5902: Error: Symbol '.size' is already defined
+basic.s:5903: Error: '.DW' is not a recognized control command
+basic.s:5903: Error: Symbol 'Reset' is already defined
+basic.s:5903: Error: ':' expected
+basic.s:5903: Error: Symbol '.size' is already defined
+ld65: Error: Input file 'basic.o' not found
