@@ -74,3 +74,33 @@
   - Have I/O take up a small chunk of memory, from 0xC000 to 0xE000
   - Backplane with 5V PSU
   - Basic in EPROM, bank switched, monitor code moved down to low memory, (BBC Micro like)
+
+## Code Snippets
+### Memory Check/count, from MS Basic
+
+        lda     #<RAMSTART2
+        ldy     #>RAMSTART2
+        sta     LINNUM
+        sty     LINNUM+1
+        ldy     #$00
+L40D7:
+        inc     LINNUM
+        bne     L40DD
+        inc     LINNUM+1
+L40DD:
+        lda     #$92 ; 10010010 / 00100100
+        sta     (LINNUM),y
+        cmp     (LINNUM),y
+        bne     L40FA
+        asl     a
+        sta     (LINNUM),y
+        cmp     (LINNUM),y
+        beq     L40D7; old: faster
+        bne     L40FA
+L40EE:
+        jsr     CHRGOT
+        jsr     LINGET
+        tay
+        beq     L40FA
+        jmp     SYNERR
+L40FA:
